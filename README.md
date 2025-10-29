@@ -2,7 +2,7 @@
 ## Where You Can Learn, Brew, and Study the Starbucks Way
 *****
 #### Logo: 
-#### ![Logo](./WDProjLithiumLorenzanaLorenzo/Assets/Logo.png)
+#### ![Logo](Assets/Logo.png)
 
 
 ### Description: 
@@ -36,27 +36,27 @@
 ### Wireframes: 
 
 ### Home Page:
-#### ![Home Page](../WDProjLithiumLorenzanaLorenzo/Assets/HomePage.png)
+#### ![Home Page](Assets/HomePage.png)
 
 ### Overview (P1):
-#### ![Overview (P1)](../WDProjLithiumLorenzanaLorenzo/Assets/Overview.png)
+#### ![Overview (P1)](Assets/Overview.png)
 
 ### Coffee Belt (P2):
-#### ![Coffee Belt (P2)](../WDProjLithiumLorenzanaLorenzo/Assets/CoffeeBelt.png)
+#### ![Coffee Belt (P2)](Assets/CoffeeBelt.png)
 
 ### Branches in PH (P3):
-#### ![Branches in PH (P3)](../WDProjLithiumLorenzanaLorenzo/Assets/BranchesinPH.png)
+#### ![Branches in PH (P3)](Assets/BranchesinPH.png)
 
 ### Menu (P4):
-#### ![Menu (P4)](../WDProjLithiumLorenzanaLorenzo/Assets/Menu.png)
+#### ![Menu (P4)](Assets/Menu.png)
 
 ### Study at SB (P5):
-#### ![Study at SB (P5)](../WDProjLithiumLorenzanaLorenzo/Assets/Study.png)
+#### ![Study at SB (P5)](Assets/Study.png)
 
 ### Study at SB - Expanded (P5):
-#### ![Study at SB - Expanded (P5)](../WDProjLithiumLorenzanaLorenzo/Assets/StudyExp.png)
+#### ![Study at SB - Expanded (P5)](Assets/StudyExp.png)
 
 ### Sources (P6):
-#### ![Sources (P6)](../WDProjLithiumLorenzanaLorenzo/Assets/Sources.png)
+#### ![Sources (P6)](Assets/Sources.png)
 
 
