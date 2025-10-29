@@ -45,11 +45,7 @@
 #### ![Coffee Belt (P2)](Assets/CoffeeBelt.png)
 
 ### Branches in PH (P3):
-<<<<<<< HEAD
 #### ![Branches in PH (P3)](Assets/BranchesinPH.png)
-=======
-#### ![Branches in PH (P3)]([../WDProjLithiumLorenzanaLorenzo/Assets/BranchesinPH.png](https://github.com/2313Bernice/WDProjLithiumLorenzanaLorenzo/blob/c4d5d742f6ac8086993ed1d4653a1b3b246be39e/Assets/BranchesinPH.png))
->>>>>>> 3a812398f8727156107961575349b05cb1f3790c
 
 ### Menu (P4):
 #### ![Menu (P4)](Assets/Menu.png)
