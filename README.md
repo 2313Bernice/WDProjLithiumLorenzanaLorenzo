@@ -2,7 +2,7 @@
 ## Where You Can Learn, Brew, and Study the Starbucks Way
 *****
 #### Logo: 
-#### ![Logo](../WDProjLithiumLorenzanaLorenzo/Assets/Logo.png)
+#### ![Logo](./WDProjLithiumLorenzanaLorenzo/Assets/Logo.png)
 
 
 ### Description: 
