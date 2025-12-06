@@ -3,6 +3,89 @@
     src: url(../Assets/SoDoSans-Black.ttf);
    }
 
-body{ 
+body { 
     font-family: Starbucks;
+    margin: 0;
 }
+
+header { 
+    background-color: rgb(0, 98, 65);
+    color: white;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 1rem 5%;
+    background-color: rgb(0, 98, 65);
+    margin-bottom: 2rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+ 
+button{
+      background-color:rgb(6, 79, 54);
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: Starbucks;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      margin: 10px;
+      height: 50px;
+      width: 150px;
+      transition: 0.3s;
+     }
+
+button:hover{
+    background-color: rgb(39, 165, 123);
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 98, 65);
+    text-align: center;
+    color: white;
+}
+ .credits{
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 12px;
+ }
+
+ #website{
+    text-align:center;
+ }
+
+@media(max-width: 600px){
+    #Title{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 12px;
+        height: 50px;
+        width:70px;
+        margin:1px;
+        padding: 0.5rem;
+    }
+
+    nav {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+   }
+
+   .credits{
+    font-size: 10px;
+ }
+}
+   
+
+
