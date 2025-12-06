@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Starbucks;
+    src: url(../Assets/Starbucks.otf);
+   }
+
+body{ 
+    font-family: Starbucks;
+}
