@@ -1,0 +1,89 @@
+
+#Origin{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: rgb(5, 75, 52);
+}
+
+.wrapper{ 
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem; 
+}
+
+.info{
+    flex: 1;
+    margin-right: auto;
+    background-size: cover;
+    padding: 2%;
+    background-color:rgb(5, 75, 52);
+    border-radius: 1rem;
+    color: rgb(243, 240, 240);
+    text-align:justify;
+}
+
+#origin1{
+    display: flex;
+    width: 50%;
+    height: 15%;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+#origin2{
+    display: flex;
+    width: 30%;
+    height: 10%;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+#origin4{
+    display: flex;
+    width: 40%;
+    height: 20%;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+#origin5{
+    display: flex;
+    width: 50%;
+    height: 30%;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+.past{
+    background-color:rgb(5, 75, 52);
+    padding: 1rem 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#origin3{
+    display: block;
+    border-radius: 2rem;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Founders{
+    display: flex;
+    padding: 1rem 5%;
+}
+
+.founder{
+    width:40%;
+    height:40%;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+

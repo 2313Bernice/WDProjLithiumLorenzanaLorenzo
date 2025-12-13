@@ -1,0 +1,79 @@
+#CB{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: rgb(5, 75, 52);
+}
+
+#description{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: Starbucks;
+    margin: 2rem;
+    margin-top: 2%;
+    color: rgb(5, 75, 52);
+}
+
+.Places{
+    display: flex;
+    padding: 1rem 5%;
+    background-color: rgb(5, 75, 52);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+#Latin{
+    width:20%;
+    height:20%;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s ease-in;
+}
+
+#Latin:hover{ 
+    width: 30%;
+}
+
+#Africa{
+    width:20%;
+    height:20%;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s ease-in;
+}
+
+#Africa:hover{ 
+    width: 30%;
+}
+
+#Asia{
+    width:20%;
+    height:20%;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s ease-in;
+}
+
+#Asia:hover{ 
+    width: 30%;
+}
+
+.info{
+    flex: 1;
+    margin-right: auto;
+    background-size: cover;
+    padding: 2%;
+    background-color:rgb(5, 75, 52);
+    border-radius: 1rem;
+    color: rgb(243, 240, 240);
+    text-align:justify;
+}
+
+.header{
+    padding: 0 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-right: auto;
+  }
