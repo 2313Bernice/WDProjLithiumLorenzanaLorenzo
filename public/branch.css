@@ -1,0 +1,53 @@
+
+#Branch{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: rgb(5, 75, 52);
+}
+
+.wrapper{ 
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(5, 75, 52);
+}
+
+.info{
+    flex: 1;
+    margin-right: auto;
+    background-size: cover;
+    padding: 2%;
+    background-color:rgb(5, 75, 52);
+    border-radius: 1rem;
+    color: rgb(243, 240, 240);
+    text-align:justify;
+}
+
+#header{
+    padding: 0 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-right: auto;
+    color: rgb(243, 240, 240);
+  }
+
+  
+  #Map{
+    width:20%;
+    height:20%;
+    margin: 2rem;
+    border-radius: 1rem;
+    transition: 0.5s ease-in;
+}
+
+#Map:hover{ 
+    width: 30%;
+}
