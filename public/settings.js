@@ -7,7 +7,7 @@ const imageUrls = [
 
 let currentIndex = 0;
 const targetElement = document.body;
-const button = document.getElementById('changeButton');
+const button = document.getElementById('bgImageBtn');
 
 function changeBackground() {
     targetElement.style.backgroundImage = `url("${imageUrls[currentIndex]}")`;
@@ -20,5 +20,21 @@ function changeBackground() {
 
 button.addEventListener('click', changeBackground);
 
-// Set initial background
 changeBackground();
+
+const sounds = [
+    "../Assets/sound1.mp3",
+    "../Assets/sound2.mp3",
+    "../Assets/sound3.mp3"
+];
+
+let soundIndex = 0;
+const bgAudio = new Audio(sounds[soundIndex]);
+bgAudio.loop = true;
+
+document.getElementById("bgSoundBtn").addEventListener("click", () => {
+    bgAudio.pause();
+    soundIndex = (soundIndex + 1) % sounds.length;
+    bgAudio.src = sounds[soundIndex];
+    bgAudio.play();
+});
