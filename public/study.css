@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Starbucks;
 }
+
 .overall{
     min-height: 100vh;
     /*background*/
@@ -118,3 +119,4 @@ button:hover{
 #reset{
     background-color: rgb(58, 119, 176);
 }
+

@@ -50,7 +50,7 @@ button:hover{
 }
 
 footer{
-    position: relative;
+    position: absolute;
     left: 0;
     margin-bottom: 0;
     width: 100%;
@@ -91,6 +91,24 @@ footer{
    .credits{
     font-size: 10px;
  }
+}
+
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+               
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(6, 58, 40);
+  padding: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(26, 145, 105);   
+  border-radius: 20px;      
+  border: 3px solid rgb(6, 58, 40);
+  width: 3px;
 }
    
 
