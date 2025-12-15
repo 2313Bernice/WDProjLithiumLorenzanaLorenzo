@@ -51,3 +51,44 @@
 #Map:hover{ 
     width: 30%;
 }
+
+div.scroll-container {
+  width: 800px;
+  white-space: nowrap;
+  background-color: rgb(12, 122, 86);
+  overflow: auto;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 1rem;
+}
+
+div.scroll-container img {
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 15px;
+  width:800px;
+  height: 450px;
+}
+
+figcaption{
+    display: inline-block;
+    margin-right: auto;
+    
+}
+
+div.scroll-container::-webkit-scrollbar {
+  background-color: transparent;
+               
+}
+
+div.scroll-container::-webkit-scrollbar-track {
+  background-color: rgb(12, 122, 86);
+  padding: 2px;
+}
+
+div.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgb(14, 68, 50);   
+  border-radius: 20px;      
+  border: 3px solid rgb(12, 122, 86);
+  width: 3px;
+}

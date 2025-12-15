@@ -30,9 +30,8 @@
     text-align:justify;
     background-color:rgb(5, 75, 52);
 }
+
 .description{
-    display: in;
-    flex-wrap: wrap;
     margin-right: auto;
     background-size: cover;
     padding: 2%;
@@ -54,7 +53,7 @@
 
 #drinks{
     width: 15%;
-    margin: 2rem;
+    margin: 1.5rem;
     transition: 0.5s ease-in;
 }
 
