@@ -1,4 +1,10 @@
 
+.Title{
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: rgb(5, 75, 52);
+}
+
 #Branch{
     margin-left: 2rem;
     font-size: 3rem;
@@ -91,4 +97,49 @@ div.scroll-container::-webkit-scrollbar-thumb {
   border-radius: 20px;      
   border: 3px solid rgb(12, 122, 86);
   width: 3px;
+}
+
+#stores:link {
+  display:flex;
+  width: 170px;
+  text-decoration: none;
+  color: rgb(243, 240, 240);
+  background-color: rgb(10, 77, 55);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+#stores:visited {
+  display:flex;
+  width: 170px;
+  text-decoration: none;
+  color: rgb(243, 240, 240);
+  background-color: rgb(47, 186, 139);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  
+}
+
+#stores:hover {
+  display:flex;
+  width: 170px;
+  background-color: rgb(31, 140, 103);
+  margin: 1rem;
+  text-decoration: none;
+}
+
+#stores:active {
+  display:flex;
+  width: 170px;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+h2{ 
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
 }

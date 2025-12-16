@@ -1,3 +1,5 @@
+
+
 #CB{
     margin-left: 2rem;
     font-size: 3rem;
@@ -77,3 +79,18 @@
     gap: 1rem;
     margin-right: auto;
   }
+
+  #CofBeltMap{
+    display:flex;
+    width: 80%;
+    border-radius: 1rem;
+    margin: auto;
+  }
+
+  h2{ 
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
+

@@ -87,3 +87,9 @@
     border-radius: 1rem;
 }
 
+h2{ 
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
