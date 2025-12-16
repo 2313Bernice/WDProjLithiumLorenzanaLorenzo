@@ -6,6 +6,13 @@
     font-family: Starbucks;
 }
 
+h2{        /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
+
 .overall{ /* wrapper that centers everything on the screen */
     min-height: 100vh;
     display: flex;
@@ -34,6 +41,7 @@ hr{ /* horizontal divider line */
     border-radius: 1em;
     border: none;
 }
+
 .timer{  /* timer text styling */
     font-size: 10em;
     font-weight: 700;
@@ -123,7 +131,6 @@ button:hover{  /* hover animation for all buttons */
 
 .wrapper{  /* wrapper for additional content sections */
     padding: 0 15px;
-    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -139,12 +146,4 @@ button:hover{  /* hover animation for all buttons */
     background-color:rgb(5, 75, 52);
     border-radius: 1rem;
     color: rgb(243, 240, 240);
-    text-align:justify;
-}
-
-h2{                                      /*styles all the h2 tags*/
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: rgb(243, 240, 240);
-}
+    text-align:justify;}

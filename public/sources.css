@@ -6,6 +6,13 @@
     color: rgb(5, 75, 52);
 }
 
+h2{        /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
+
 /* styles container that holds all creator cards in one row */
 .creators-row {
     display: flex;
@@ -21,27 +28,15 @@
     padding: 2em;
     border-radius: 1em;
     color: white;
-    text-align: justify;
+    text-align: center;
     margin-left: 3em;
 }
 
 /*styling for creator images inside the cards */
 .creator-card img {
-    width: 300px;
-    height:300px;
+    width: 50%;
     border-radius: 0.8em;
-    margin:1rem;
-}
-
-.info{                          /*styles the texts/information inside the class 'info' and is inside the container (.wrapper)*/
-    flex: 1;
-    margin-right: auto;
-    background-size: cover;
-    padding: 2%;
-    background-color:rgb(5, 75, 52);
-    border-radius: 1rem;
-    color: rgb(243, 240, 240);
-    text-align:justify;
+    margin-bottom: 1em;
 }
 
 
@@ -57,7 +52,6 @@
 .references-container {
     max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 1rem;
     background-color: rgb(5, 75, 52);
     padding: 6em;
     color: white;
@@ -76,11 +70,4 @@
     width: 100%;
     white-space: normal;
     word-break: break-word;
-}
-
-h2{                                      /*styles all the h2 tags*/
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: rgb(243, 240, 240);
 }
