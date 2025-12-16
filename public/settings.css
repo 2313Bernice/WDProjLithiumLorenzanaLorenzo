@@ -14,9 +14,3 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-
-#changeButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}

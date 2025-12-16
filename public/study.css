@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
-    color:  rgb(0, 98, 65);
+    color:  rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.434);
     border-radius: 2em;
     padding: 4em 3em;
@@ -47,6 +47,64 @@ button{
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+}
+
+#changeButton {
+ 
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 240px; 
+    right: 10px; 
+    z-index: 100;
+
+    background-image: url("../Assets/cogwheel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.settings {
+    position: absolute;
+    top: 240px;
+    right: 10px;
+    z-index: 100;
+}
+
+.settings-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.settings:hover .settings-menu {
+    display: flex;
+}
+
+.settings-menu button {
+    background-color: rgb(2, 54, 23);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.settings-menu button:hover {
+    background-color: rgb(80, 130, 55);
 }
 
 button:hover{

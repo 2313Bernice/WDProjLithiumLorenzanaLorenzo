@@ -1,0 +1,28 @@
+#title {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(5, 75, 52);
+}
+
+.creators-row {
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+}
+
+.creator-card { 
+    flex: 1;
+    background-color: rgb(5, 75, 52);
+    padding: 1.5em;
+    border-radius: 1em;
+    color: white;
+    text-align: justify;
+}
+
+
+.creator-card img {
+    width: 100%;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+}
+
