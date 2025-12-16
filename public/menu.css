@@ -20,12 +20,12 @@ h2{                                          /*styles all the h2 tags*/
     color: rgb(243, 240, 240);
 }
 
-#menu1{
+#menu1{                     /*styles the image under id tag 'menu1*/
     width: 40%;
     border-radius: 1rem;
 }
 
-.preview{ 
+.preview{              /*styles the container that holds the paragraphs/information under id tag 'start*/
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ h2{                                          /*styles all the h2 tags*/
     margin-bottom: 1rem;
 }
 
-#start{
+#start{            /*styles the paragraphs/information under this tag*/
     flex: 1;
     margin-right: auto;
     border-radius: 1rem;

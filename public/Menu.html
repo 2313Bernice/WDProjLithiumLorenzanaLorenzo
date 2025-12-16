@@ -15,16 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    
 </head>
+
+<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
+ on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
+ automatically scroll down to that section that fits their choice. -->
+
 <body>
 
-    <header>
-    <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img>
-    <h1 id="Title"> BREWING WITH STARBUCKS </h1>
+    <header> <!-- the header of the website -->
+    <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img> <!-- the logo of the website -->
+    <h1 id="Title"> BREWING WITH STARBUCKS </h1> <!-- the name of the website -->
     </header>
 
-    <nav>
+    <nav> <!-- the navigation bar of the website -->
              <a href="../index.html"> <button> Home </button>  </a></li>
              <a href="../public/Overview.html"> <button>Overview</button> </a></li>
              <a href="../public/Branch.html"> <button>Branches in PH</button> </a></li>
@@ -34,35 +38,35 @@
              <a href="../public/Sources.html"> <button>Sources</button> </a></li>
     </nav>
 
-    <h1 class="Title"> Menu Recommendations </h1>
+    <h1 class="Title"> Menu Recommendations </h1> <!-- title of the current webpage -->
 
-    <div class="preview">
-    <div id="start">
+    <div class="preview"> <!-- container that holds the introductory paragraphs of the webpage -->
+    <div id="start"> <!-- the introductory paragraphs -->
     <p> Everyone has their own preferences when it comes to drinks. Starbucks' menu has a variety of drinks to choose from,
         ranging from caffeine drinks that are either sweet or strong, to non-caffeine drinks such as refreshers! Is it not 
-        hard to choose when there are so many choices to pick from? </p>
+        hard to choose when there are so many choices to pick from? </p> <!--introductory paragraph -->
         
     <p> Choose your vibe and we’ll serve the perfect drink. Click a category below that matches your current coffee cravings. 
         Choose from either sweet and creamy drinks, strong and bold coffee, refreshing and fruity drinks, non-coffee drinks, 
-        and the special seasonal favorites. Jump straight to the choice that bests fit your taste. Enjoy your drink!
+        and the special seasonal favorites. Jump straight to the choice that bests fit your taste. Enjoy your drink! <!--introductory paragraph -->
     </p>
 
     </div>
-    <img src="../Assets/menu1.png" id="menu1">
+    <img src="../Assets/menu1.png" id="menu1"> <!-- image of Starbucks drinks -->
     </div>
 
-    <div class="links">
-        <a href="#Sweet"> <button id="choice"> Sweet and Creamy Favorites </button></a>
-        <a href="#Strong"> <button id="choice"> Strong and Bold Coffee </button> </a>
-        <a href="#Refreshers"> <button id="choice"> Refreshing and Fruity Drinks </button></a>
-        <a href="#NonCof"> <button id="choice"> Non-Coffee Options </button></a>
-        <a href="#Seasonal"> <button id="choice"> Seasonal Favorites </button></a>
+    <div class="links"> <!--section that holds the buttons that when selected, will jump to a specific section of the menu -->
+        <a href="#Sweet"> <button id="choice"> Sweet and Creamy Favorites </button></a> <!--button that leads to Sweet and Creamy Favorites section-->
+        <a href="#Strong"> <button id="choice"> Strong and Bold Coffee </button> </a> <!--button that leads to Strong and Bold Coffee section-->
+        <a href="#Refreshers"> <button id="choice"> Refreshing and Fruity Drinks </button></a> <!--button that leads to Refreshing and Fruity Drinks section-->
+        <a href="#NonCof"> <button id="choice"> Non-Coffee Options </button></a> <!--button that leads to Non-Coffee Options section-->
+        <a href="#Seasonal"> <button id="choice"> Seasonal Favorites </button></a> <!--button that leads to Seasonal Favorites section-->
     </div>
 
-    <div class="section">
-        <section id="Sweet">
-        <div class="wrapper"> 
-            <h2> Sweet and Creamy Favorites </h2>
+    <div class="section"> <!--turns each part into sections-->
+        <section id="Sweet"> <!--section of Sweet and Creamy Favorites-->
+        <div class="wrapper">  <!-- a container that holds all texts and images within it -->
+            <h2> Sweet and Creamy Favorites </h2>  <!--section title-->
             <div class="description">
                 <img src="../Assets/CM.png" id="drinks"> 
                 <img src="../Assets/CR.png" id="drinks">
@@ -71,14 +75,15 @@
                 <img src="../Assets/MCC.png" id="drinks">
                 <img src="../Assets/CF.png" id="drinks">
                 <img src="../Assets/IWCM.png" id="drinks">
+                <!--all photos for Sweet and Creamy Section-->
             </div>
         </div>
         </section>
-
-        <section id="Strong">
-            <div class="wrapper">
-            <h2> Strong and Bold Coffee </h2>
-            <div class="description">
+ 
+        <section id="Strong"> <!--section of Strong and Bold Coffee-->
+            <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+            <h2> Strong and Bold Coffee </h2> <!--section title-->
+            <div class="description"> <!--container that holds all the photos of a specific section-->
                 <img src="../Assets/CA.png" id="drinks">
                 <img src="../Assets/CaMi.png" id="drinks">
                 <img src="../Assets/CB.png" id="drinks">
@@ -87,51 +92,86 @@
                 <img src="../Assets/E.png" id="drinks">
                 <img src="../Assets/EM.png" id="drinks">
                 <img src="../Assets/ECP.png" id="drinks">
+                <!--all photos for Strong and Bold Section-->
              </div>
         </div>
         </section>
 
-        <section id="Refreshers">
-            <div class="wrapper">
-            <h2> Refreshing and Fruity Drinks </h2>
-            <div class="description">
+        <section id="Refreshers"> <!--section of Refreshing and Fruity Drinks -->
+            <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+            <h2> Refreshing and Fruity Drinks </h2> <!--section title-->
+            <div class="description"> <!--container that holds all the photos of a specific section-->
                 <img src="../Assets/MDFL.png" id="drinks">
                 <img src="../Assets/SALR.png" id="drinks">
                 <img src="../Assets/PD.png" id="drinks">
                 <img src="../Assets/DD.png" id="drinks">
+                <!--all photos for Refreshing and Fruity Section-->
              </div>
         </div>
         </section>
 
-        <section id="NonCof">
-            <div class="wrapper">
-            <h2> Non-Coffee Options </h2>
-            <div class="description">
+        <section id="NonCof"> <!--section of Non-Coffee Options -->
+            <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+            <h2> Non-Coffee Options </h2> <!--section title-->
+            <div class="description"> <!--container that holds all the photos of a specific section-->
                 <img src="../Assets/HC.png" id="drinks">
                 <img src="../Assets/ICT.png" id="drinks">
                 <img src="../Assets/ICL.png" id="drinks">
                 <img src="../Assets/CCCF.png" id="drinks">
+                <!--all photos for Non-Coffee Section-->
              </div>
         </div>
         </section>
 
-        <section id="Seasonal">
-            <div class="wrapper">
-            <h2> Seasonal Favorites </h2>
-            <div class="description">
+        <section id="Seasonal"> <!--section of Seasonal Favorites -->
+            <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+            <h2> Seasonal Favorites </h2> <!--section title-->
+            <div class="description"> <!--container that holds all the photos of a specific section-->
                 <img src="../Assets/PM.png" id="drinks">
                 <img src="../Assets/PSL.png" id="drinks">
                 <img src="../Assets/CPL.png" id="drinks">
+                <!--all photos for Seasonal Section-->
              </div>
         </div>
     </section>
     </div>
 
-     <footer>  
-       <div class="credits">
-       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p> 
-       <p> <span>&copy; Abigail Lorenzana </span></p> 
-       <p> <span>&copy; Bernice Lorenzo </span></p>  
+     <footer>   <!-- the footer of the website -->
+       
+       <div class="footer_content">  <!-- different portions of information in the footer -->
+        <h2> Useful Links </h2> <!-- section for important links related to Starbucks -->
+        <p> 
+            <a href="https://www.starbucks.com/about-us/"> About Starbucks </a> <!-- SB Philippines's About Us -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.ph/stores"> Branches </a> <!-- SB Philippines's Branches Website -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.com/menu"> Menu </a> <!-- SB Philippines's Menu Website -->
+        </p>
+        </div>
+
+        <div class="footer_content"> <!-- different portions of information in the footer -->
+        <h2> Social Media Accounts </h2> <!-- section for Starbucks' social media accounts -->
+        <p> 
+            <a href="https://www.facebook.com/StarbucksPhilippines/"> Facebook </a> <!-- SB Philippines's Facebook account -->
+        </p>
+        <p> 
+            <a href="https://www.instagram.com/starbucksph/"> Instagram </a> <!-- SB Philippines's Instagram account -->
+        </p>
+        <p> 
+            <a href="https://x.com/starbucksph"> Twitter </a> <!-- SB Philippines's Twitter account -->
+        </p>
+        <p> 
+            <a href="https://www.youtube.com/@StarbucksPhilippines1"> Youtube </a> <!-- SB Philippines's Youtube account -->
+        </p>
+        </div>
+
+
+       <div class="credits"> <!-- credits portion of the footer -->
+       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p>  <!-- copy right of the webpage -->
+       <p> <span>&copy; Abigail Lorenzana </span></p>  <!-- copy right of the Abi (co-creator) -->
+       <p> <span>&copy; Bernice Lorenzo </span></p>   <!-- copy right of the Bernice (co-creator) -->
        </div>
     </footer>
 

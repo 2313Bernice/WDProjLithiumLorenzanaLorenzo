@@ -122,6 +122,7 @@ button:hover{
 
 .wrapper{ 
     padding: 0 15px;
+    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -138,4 +139,11 @@ button:hover{
     border-radius: 1rem;
     color: rgb(243, 240, 240);
     text-align:justify;
+}
+
+h2{                                      /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
 }
