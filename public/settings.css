@@ -1,16 +1,18 @@
-body{
-    margin: 0;
+body{   /* Styles applied to the entire page */
+    margin: 0;                            
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     transition: background-image 0.5s ease-in-out;
+    /* Smooth transition effect when the background image changes
+       (used when switching study backgrounds) */
 }
 
-#container1 {
+#container1 { /* styles the Main container that holds the timer and controls */
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);    /* Semi-transparent background so text is readable, while still showing the background image */
     border-radius: 10px;
 }

@@ -1,18 +1,18 @@
-* {
+
+* { /* global resets and default styling for all elements */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Starbucks;
 }
 
-.overall{
+.overall{ /* wrapper that centers everything on the screen */
     min-height: 100vh;
-    /*background*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container{
+.container{  /* styles main timer container */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,25 +23,26 @@
     border-radius: 2em;
     padding: 4em 3em;
 }
-.title{
+.title{ /* title text styling */
     font-size: 3em;
 }
-hr{
+
+hr{ /* horizontal divider line */
     width: 100x;
     background-color: white;
     height: 5px;
     border-radius: 1em;
     border: none;
 }
-.timer{
+.timer{  /* timer text styling */
     font-size: 10em;
     font-weight: 700;
 }
-.button-wrapper{
+.button-wrapper{  /* wrapper for timer control buttons */
     display: flex;
     gap: 1em
 }
-button{
+button{  /* all button styling */
     border-radius: 0.5em;
     border: none;
     color: white;
@@ -49,7 +50,7 @@ button{
     transition: 0.2s ease-in-out;
 }
 
-#changeButton {
+#changeButton { /* background/settings button (cogwheel icon) */
  
     width: 70px;
     height: 70px;
@@ -70,19 +71,19 @@ button{
     padding: 0;
 }
 
-.settings {
+.settings { /* styles wrapper for the settings dropdown */
     position: absolute;
     top: 240px;
     right: 10px;
     z-index: 100;
 }
 
-.settings-menu {
+.settings-menu { /* hidden settings menu */
     position: absolute;
     top: 80px;
     right: 0;
 
-    display: none;
+    display: none;   /* hidden by default */
     flex-direction: column;
     gap: 10px;
 
@@ -91,11 +92,11 @@ button{
     border-radius: 10px;
 }
 
-.settings:hover .settings-menu {
+.settings:hover .settings-menu { /* this shows the settings menu when hovered */
     display: flex;
 }
 
-.settings-menu button {
+.settings-menu button {   /* buttons inside the settings menu */
     background-color: rgb(2, 54, 23);
     padding: 10px 15px;
     border-radius: 8px;
@@ -103,24 +104,24 @@ button{
     white-space: nowrap;
 }
 
-.settings-menu button:hover {
+.settings-menu button:hover {  /* hover effect for settings buttons */
     background-color: rgb(80, 130, 55);
 }
 
-button:hover{
+button:hover{  /* hover animation for all buttons */
     transform: translateY(-10px);
 }
-#star{
+#star{  /* start button color */
     background-color: rgb(101, 159, 69);
 }
-#stop1{
+#stop1{  /* stop button color */
     background-color: rgb(161, 61, 61);
 }
-#reset{
+#reset{   /* reset button color */
     background-color: rgb(58, 119, 176);
 }
 
-.wrapper{ 
+.wrapper{  /* wrapper for additional content sections */
     padding: 0 15px;
     margin-bottom: 1rem;
     display: flex;
@@ -130,7 +131,7 @@ button:hover{
     gap: 2rem; 
 }
 
-.info{
+.info{  /* information box styling */
     flex: 1;
     margin-right: auto;
     background-size: cover;

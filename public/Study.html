@@ -18,13 +18,18 @@
     
     <script src="app.js" defer></script>
 </head>
+<!--  This page will contain an immersive experience for the user, with a background image and background audio that will make it feel like the user is actually at Starbucks. 
+  The background images and background musics that can be changed based on the user’s preference, with a sidebar showing different background options that the user can choose from. -->
+
 <body>
 
+     <!-- header section containing logo and website title -->
     <header>
     <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img>
     <h1 id="Title"> BREWING WITH STARBUCKS </h1>
     </header>
 
+    <!-- navigation bar for moving between pages -->
     <nav>
         
              <a href="../index.html"> <button> Home </button>  </a></li>
@@ -37,16 +42,17 @@
       
     </nav>
 
+<!-- main wrapper that centers the Pomodoro timer -->
 <div class="overall"> 
 
     <div class="container">
-        <h1 class="title">Pomodoro Timer</h1>
+        <h1 class="title">Pomodoro Timer</h1>  <!-- timer title -->
 
-        <hr>
+        <hr> <!-- decorative divider -->
+ 
+        <p class="timer" id="timer">25:00</p>  <!-- timer display (updated by JavaScript) -->
 
-        <p class="timer" id="timer">25:00</p>
-
-        <div class="button-wrapper">
+        <div class="button-wrapper">  <!-- timer control buttons -->
             <button id="start">Start</button>
             <button id="stop1">Stop</button>
             <button id="reset">Reset</button>
@@ -54,16 +60,18 @@
     </div>
 </div>  
 
+<!-- settings button and dropdown menu -->
 <div id="container1" class="settings">
-    <button id="changeButton"></button>
+    <button id="changeButton"></button>  <!-- cogwheel button -->
 
+    <!-- settings dropdown options -->
     <div class="settings-menu">
         <button id="bgImageBtn">Change Background</button>
         <button id="bgSoundBtn">Change Music</button>
     </div>
 </div>
 
-
+ <!-- informational section explaining the Pomodoro Technique -->
     <div class="wrapper">
     <div class="info">
     <p class="info">The Pomodoro Technique is a time management method that helps people stay focused by working in short, dedicated bursts. 
@@ -75,44 +83,15 @@
     </div>
     </div>
 
+<!-- JavaScript for background and music settings -->
 <script src="settings.js"></script>
 
-     <footer>   <!-- the footer of the website -->
-       
-       <div class="footer_content">  <!-- different portions of information in the footer -->
-        <h2> Useful Links </h2> <!-- section for important links related to Starbucks -->
-        <p> 
-            <a href="https://www.starbucks.com/about-us/"> About Starbucks </a> <!-- SB Philippines's About Us -->
-        </p>
-        <p> 
-            <a href="https://www.starbucks.ph/stores"> Branches </a> <!-- SB Philippines's Branches Website -->
-        </p>
-        <p> 
-            <a href="https://www.starbucks.com/menu"> Menu </a> <!-- SB Philippines's Menu Website -->
-        </p>
-        </div>
-
-        <div class="footer_content"> <!-- different portions of information in the footer -->
-        <h2> Social Media Accounts </h2> <!-- section for Starbucks' social media accounts -->
-        <p> 
-            <a href="https://www.facebook.com/StarbucksPhilippines/"> Facebook </a> <!-- SB Philippines's Facebook account -->
-        </p>
-        <p> 
-            <a href="https://www.instagram.com/starbucksph/"> Instagram </a> <!-- SB Philippines's Instagram account -->
-        </p>
-        <p> 
-            <a href="https://x.com/starbucksph"> Twitter </a> <!-- SB Philippines's Twitter account -->
-        </p>
-        <p> 
-            <a href="https://www.youtube.com/@StarbucksPhilippines1"> Youtube </a> <!-- SB Philippines's Youtube account -->
-        </p>
-        </div>
-
-
-       <div class="credits"> <!-- credits portion of the footer -->
-       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p>  <!-- copy right of the webpage -->
-       <p> <span>&copy; Abigail Lorenzana </span></p>  <!-- copy right of the Abi (co-creator) -->
-       <p> <span>&copy; Bernice Lorenzo </span></p>   <!-- copy right of the Bernice (co-creator) -->
+<!-- footer section -->
+     <footer>  
+       <div class="credits">
+       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p> 
+       <p> <span>&copy; Abigail Lorenzana </span></p> 
+       <p> <span>&copy; Bernice Lorenzo </span></p>  
        </div>
     </footer>
 
