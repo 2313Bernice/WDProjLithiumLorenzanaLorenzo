@@ -39,17 +39,17 @@
       
     </nav>
 
-<!-- Main wrapper that centers the Pomodoro timer -->
+<!-- main wrapper that centers the Pomodoro timer -->
 <div class="overall"> 
 
     <div class="container">
-        <h1 class="title">Pomodoro Timer</h1>
+        <h1 class="title">Pomodoro Timer</h1>  <!-- timer title -->
 
-        <hr>
+        <hr> <!-- decorative divider -->
+ 
+        <p class="timer" id="timer">25:00</p>  <!-- timer display (updated by JavaScript) -->
 
-        <p class="timer" id="timer">25:00</p>
-
-        <div class="button-wrapper">
+        <div class="button-wrapper">  <!-- timer control buttons -->
             <button id="start">Start</button>
             <button id="stop1">Stop</button>
             <button id="reset">Reset</button>
@@ -57,16 +57,18 @@
     </div>
 </div>  
 
+<!-- settings button and dropdown menu -->
 <div id="container1" class="settings">
-    <button id="changeButton"></button>
+    <button id="changeButton"></button>  <!-- cogwheel button -->
 
+    <!-- settings dropdown options -->
     <div class="settings-menu">
         <button id="bgImageBtn">Change Background</button>
         <button id="bgSoundBtn">Change Music</button>
     </div>
 </div>
 
-
+ <!-- informational section explaining the Pomodoro Technique -->
     <div class="wrapper">
     <div class="info">
     <p class="info">The Pomodoro Technique is a time management method that helps people stay focused by working in short, dedicated bursts. 
@@ -78,8 +80,10 @@
     </div>
     </div>
 
+<!-- JavaScript for background and music settings -->
 <script src="settings.js"></script>
 
+<!-- footer section -->
      <footer>  
        <div class="credits">
        <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p> 
