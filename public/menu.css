@@ -88,10 +88,11 @@ html{
     scroll-behavior:smooth; 
 }
 
-h2{
+h2{ 
+    font-family: "Oswald", sans-serif;
     margin-right: auto;
+    margin-left: 1rem;
     margin-bottom: 0;
-    padding: 1rem;
     font-size: 2rem;
     color: rgb(243, 240, 240);
 }

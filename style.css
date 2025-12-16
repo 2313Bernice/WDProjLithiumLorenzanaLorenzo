@@ -110,6 +110,13 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid rgb(6, 58, 40);
   width: 3px;
 }
+
+h2{ 
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
    
 
 
