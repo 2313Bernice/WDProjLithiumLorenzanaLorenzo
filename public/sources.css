@@ -26,3 +26,32 @@
     border-radius: 0.8em;
     margin-bottom: 1em;
 }
+
+.class{
+    width: 50%;
+    background-color: rgb(5, 75, 52);
+    border-radius: 0.8em;
+    margin-bottom: 1em;  
+}
+
+.references-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(5, 75, 52);
+    padding: 6em;
+    color: white;
+    border-radius: 1em;
+}
+
+.apa-ref {
+    text-align: left;
+    line-height: 1.6;
+
+    padding-left: 2rem;
+    text-indent: -2rem;
+
+    display: block;
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
+}

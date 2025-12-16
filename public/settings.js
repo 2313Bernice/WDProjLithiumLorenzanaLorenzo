@@ -38,3 +38,4 @@ document.getElementById("bgSoundBtn").addEventListener("click", () => {
     bgAudio.src = sounds[soundIndex];
     bgAudio.play();
 });
+
