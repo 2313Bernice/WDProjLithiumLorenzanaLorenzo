@@ -1,17 +1,19 @@
+/* Overall, this stylesheet styles the elements of Branch.html.*/
 
-.Title{
+.Title{                     /*adds styling to the main title at the beginning of the webpage*/
     margin-left: 2rem;
     font-size: 3rem;
     color: rgb(5, 75, 52);
 }
 
-#Branch{
-    margin-left: 2rem;
-    font-size: 3rem;
-    color: rgb(5, 75, 52);
+h2{                                           /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
 }
 
-.wrapper{ 
+.wrapper{                            /*a container for different sections of paragraphs and photos*/
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +25,7 @@
     background-color: rgb(5, 75, 52);
 }
 
-.info{
+.info{        /*styles the texts/information inside the class 'info' and is inside the container (.wrapper)*/
     flex: 1;
     margin-right: auto;
     background-size: cover;
@@ -34,19 +36,7 @@
     text-align:justify;
 }
 
-#header{
-    padding: 0 1px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-right: auto;
-    color: rgb(243, 240, 240);
-  }
-
-  
-  #Map{
+#Map{         /*styles the Map Image*/
     width:20%;
     height:20%;
     margin: 2rem;
@@ -54,10 +44,11 @@
     transition: 0.5s ease-in;
 }
 
-#Map:hover{ 
+#Map:hover{         /*makes the Map Image increase in size when hovering over it*/
     width: 30%;
 }
 
+/*the container that holds the scrollable gallery of Starbucks branches*/
 div.scroll-container {
   width: 800px;
   white-space: nowrap;
@@ -68,6 +59,7 @@ div.scroll-container {
   margin: 1rem;
 }
 
+/*the images in the scrollable gallery of Starbucks branches*/
 div.scroll-container img {
   display: inline-block;
   border-radius: 1rem;
@@ -76,29 +68,24 @@ div.scroll-container img {
   height: 450px;
 }
 
-figcaption{
-    display: inline-block;
-    margin-right: auto;
-    
+
+div.scroll-container::-webkit-scrollbar {           /*Styles the scrollbar of the webpage*/
+  background-color: transparent;              
 }
 
-div.scroll-container::-webkit-scrollbar {
-  background-color: transparent;
-               
-}
-
-div.scroll-container::-webkit-scrollbar-track {
+div.scroll-container::-webkit-scrollbar-track {     /*Styles the scrollbar-track of the webpage*/
   background-color: rgb(12, 122, 86);
   padding: 2px;
 }
 
-div.scroll-container::-webkit-scrollbar-thumb {
+div.scroll-container::-webkit-scrollbar-thumb {     /*Styles the scrollbar-thumb of the webpage*/
   background-color: rgb(14, 68, 50);   
   border-radius: 20px;      
   border: 3px solid rgb(12, 122, 86);
   width: 3px;
 }
 
+/*styles the link that leads to the official Starbucks website*/
 #stores:link {
   display:flex;
   width: 170px;
@@ -137,9 +124,3 @@ div.scroll-container::-webkit-scrollbar-thumb {
   margin: 1rem;
 }
 
-h2{ 
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: rgb(243, 240, 240);
-}

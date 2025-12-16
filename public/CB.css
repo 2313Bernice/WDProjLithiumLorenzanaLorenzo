@@ -1,12 +1,12 @@
+/* Overall, this stylesheet styles the elements of CoffeeBelt.html.*/
 
-
-#CB{
+.Title{                     /*adds styling to the main title at the beginning of the webpage*/
     margin-left: 2rem;
     font-size: 3rem;
     color: rgb(5, 75, 52);
 }
 
-#description{
+#description{                 /*adds styling to the main descriptions at the beginning of the webpage*/
     text-align: justify;
     font-size: 1rem;
     font-family: Starbucks;
@@ -15,7 +15,15 @@
     color: rgb(5, 75, 52);
 }
 
-.Places{
+h2{                                        /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
+
+
+.Places{                        /*a container for different sections of paragraphs and photos*/
     display: flex;
     padding: 1rem 5%;
     background-color: rgb(5, 75, 52);
@@ -23,7 +31,7 @@
     border-radius: 1rem;
 }
 
-#Latin{
+#Latin{                            /*adds styling to the image assigned to id tag 'Latin'*/
     width:20%;
     height:20%;
     margin: 1rem;
@@ -31,11 +39,11 @@
     transition: 0.5s ease-in;
 }
 
-#Latin:hover{ 
+#Latin:hover{       /*makes the image 'Latin' increase in size when hovering over it*/
     width: 30%;
 }
 
-#Africa{
+#Africa{                       /*adds styling to the image assigned to id tag 'Africa'*/
     width:20%;
     height:20%;
     margin: 1rem;
@@ -43,11 +51,11 @@
     transition: 0.5s ease-in;
 }
 
-#Africa:hover{ 
+#Africa:hover{         /*makes the image 'Africa' increase in size when hovering over it*/
     width: 30%;
 }
 
-#Asia{
+#Asia{                              /*adds styling to the image assigned to id tag 'Asia'*/
     width:20%;
     height:20%;
     margin: 1rem;
@@ -55,11 +63,11 @@
     transition: 0.5s ease-in;
 }
 
-#Asia:hover{ 
+#Asia:hover{         /*makes the image 'Asia' increase in size when hovering over it*/
     width: 30%;
 }
 
-.info{
+.info{                                      /*styles the texts/information inside the class 'info' and is inside the container (.wrapper)*/
     flex: 1;
     margin-right: auto;
     background-size: cover;
@@ -69,28 +77,13 @@
     color: rgb(243, 240, 240);
     text-align:justify;
 }
-
-.header{
-    padding: 0 1px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-right: auto;
-  }
-
-  #CofBeltMap{
+  
+#CofBeltMap{                /*adds styling to the image assigned to id tag 'CofBeltMap'*/
     display:flex;
     width: 80%;
     border-radius: 1rem;
     margin: auto;
   }
 
-  h2{ 
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: rgb(243, 240, 240);
-}
+
 
