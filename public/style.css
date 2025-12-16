@@ -61,6 +61,7 @@ footer{           /*styles all elements and links inside the footer tag*/
     width: 100%;
     background-color: rgb(0, 98, 65);
     color: white;
+    margin-top: 1rem;
 }
 
 .footer_content a{          /*styles 'a tags' within the class tag 'footer content'*/
