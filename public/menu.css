@@ -1,7 +1,23 @@
-.Title{
+/* Overall, this stylesheet styles the elements of Menu.html.*/
+
+
+html{                              /*applies smooth scrolling throughout the webpage*/
+    scroll-behavior:smooth; 
+}
+
+.Title{                        /*adds styling to the main title at the beginning of the webpage*/
     margin-left: 2rem;
     font-size: 3rem;
     color: rgb(5, 75, 52);
+}
+
+h2{                                          /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
+    margin-right: auto;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
 }
 
 #menu1{
@@ -31,7 +47,7 @@
     background-color:rgb(5, 75, 52);
 }
 
-.description{
+.description{                /*class that holds all the photos of each menu section*/
     margin-right: auto;
     background-size: cover;
     padding: 2%;
@@ -39,8 +55,8 @@
     text-align:justify;
 }
 
-.wrapper{ 
-    padding: 0 15px;
+.wrapper{                                /*a container for different sections of paragraphs and photos*/
+    padding: 0 15px; 
     margin: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -51,24 +67,24 @@
     gap: 2rem; 
 }
 
-#drinks{
+#drinks{                         /*adds styling to all the images in the menu section*/
     width: 15%;
     margin: 1.5rem;
     transition: 0.5s ease-in;
 }
 
-#drinks:hover{
+#drinks:hover{     /*makes all images in the menu section increase in sides when hovering over it*/
     width:20%;
 }
 
-.sections {
+.sections {                  /*separates each menu choices into grouped section*/
     display: flex;
     flex-direction: column;
     place-items: center;
     gap: 100rem;
     }
 
-#choice{
+#choice{                  /*adds styling to the buttons that directs to each menu choice*/
       font-size: 2rem;
       text-align: left;
       margin: 1rem;
@@ -77,22 +93,12 @@
       height: 50%;
 }
 
-.links{
+.links{                       /*the container that holds all the buttons under id 'choice'*/
     margin: 5rem;
     display: block;
     text-align: center;
     justify-content: center;
 }
 
-html{
-    scroll-behavior:smooth; 
-}
 
-h2{ 
-    font-family: "Oswald", sans-serif;
-    margin-right: auto;
-    margin-left: 1rem;
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: rgb(243, 240, 240);
-}
+
