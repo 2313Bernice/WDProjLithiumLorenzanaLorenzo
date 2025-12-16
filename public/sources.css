@@ -1,15 +1,19 @@
+
+/* page title styling */
 #title {
     text-align: center;
     font-size: 3em;
     color: rgb(5, 75, 52);
 }
 
+/* styles container that holds all creator cards in one row */
 .creators-row {
     display: flex;
     gap: 2em;
     padding: 2em;
 }
 
+/* individual creator card styling */
 .creator-card {
     display: flex;
     flex: 1;
@@ -21,12 +25,15 @@
     margin-left: 3em;
 }
 
+/*styling for creator images inside the cards */
 .creator-card img {
     width: 50%;
     border-radius: 0.8em;
     margin-bottom: 1em;
 }
 
+
+/*styling for class label */
 .class{
     width: 50%;
     background-color: rgb(5, 75, 52);
@@ -34,6 +41,7 @@
     margin-bottom: 1em;  
 }
 
+/*styles container for the references section */
 .references-container {
     max-width: 900px;
     margin: 0 auto;
@@ -43,6 +51,7 @@
     border-radius: 1em;
 }
 
+/* APA-style reference formatting */
 .apa-ref {
     text-align: left;
     line-height: 1.6;
