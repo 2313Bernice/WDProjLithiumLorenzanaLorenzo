@@ -1,9 +1,9 @@
-@font-face {
+@font-face {                 /*getting an external font to make it usable when making the website*/
     font-family: Starbucks;
     src: url(./Assets/SoDoSans-Black.ttf);
    }
 
-body { 
+body {          /*styles the elements inside the body tag*/
     background-image: url('./Assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-header { 
+header {       /*styles the elements inside the header tag*/
     background-color: rgb(0, 98, 65);
     color: white;
     padding-top: 1rem;
@@ -21,7 +21,7 @@ header {
     justify-content: center;
 }
 
-nav {
+nav {       /*styles the links and elements inside the nav tag*/
     padding: 1rem 5%;
     background-color: rgb(0, 98, 65);
     margin-bottom: 2rem;
@@ -30,8 +30,8 @@ nav {
     align-items: center;
     justify-content: space-evenly;
    }
- 
-button{
+  
+button{      /*styles the buttons present in the navigation bar*/
       background-color:rgb(6, 79, 54);
       border: none;
       border-radius: 10px;
@@ -45,32 +45,64 @@ button{
       transition: 0.3s;
      }
 
-button:hover{
+button:hover{       /*makes the buttons change background color when hovering over it*/
     background-color: rgb(39, 165, 123);
 }
 
-footer{
-    position: relative;
-    left: 0;
+h2{        /*styles all the h2 tags*/
+    font-family: "Oswald", sans-serif;
     margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+}
+
+footer{           /*styles all elements and links inside the footer tag*/
+    position: absolute;
     width: 100%;
     background-color: rgb(0, 98, 65);
-    text-align: center;
     color: white;
 }
- .credits{
-    position: relative;
+
+.footer_content a{          /*styles 'a tags' within the class tag 'footer content'*/
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin:15px;
+}
+
+.footer_content h2{          /*styles 'h2 tags' within the class tag 'footer content'*/
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.footer_content p{        /*styles 'p tags' within the class tag 'footer content'*/
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin:15px;
+}
+
+.footer .footer_content  /*layouts the footer and footer_content*/
+{ 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .credits{            /*styles the credits under the class tag 'credits*/
     text-align: left;
     padding-left: 1rem;
     font-size: 12px;
  }
 
- #website{
+ #website{            /*positions the website copy right to the center*/
     text-align:center;
     position: relative;
+    font-size: 1rem;
  }
 
-@media(max-width: 600px){
+@media(max-width: 600px){  /*makes the website change sizes depending on the user's screen size*/
     #Title{
         font-size: 20px;
     }
@@ -92,6 +124,26 @@ footer{
     font-size: 10px;
  }
 }
+
+
+body::-webkit-scrollbar {            /*Styles the scrollbar of the website*/
+  background-color: transparent;
+               
+}
+
+body::-webkit-scrollbar-track {      /*Styles the scrollbar-track of the website*/
+  background-color: rgb(6, 58, 40);
+  padding: 2px;
+}
+
+body::-webkit-scrollbar-thumb {       /*Styles the scrollbar-thumb of the website*/
+  background-color: rgb(26, 145, 105);   
+  border-radius: 20px;      
+  border: 3px solid rgb(6, 58, 40);
+  width: 3px;
+}
+
+
    
 
 

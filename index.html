@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    
+
 </head>
+<!-- This webpage serves as the home page, giving an introduction to the website's features
+ as well as small previews on its webpages -->   
 <body>
 
-    <header>
-    <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img>
-    <h1 id="Title"> BREWING WITH STARBUCKS </h1>
+    <header> <!-- the header of the website -->
+    <img src="./Assets/Logo.png" width="100" height="100" id="logo"/> </img> <!-- the logo of the website -->
+    <h1 id="Title"> BREWING WITH STARBUCKS </h1> <!-- the name of the website -->
     </header>
 
-    <nav>  
+    <nav> <!-- the navigation bar of the website -->
              <a href="./index.html"> <button> Home </button>  </a></li>
              <a href="./public/Overview.html"> <button>Overview</button> </a></li>
              <a href="./public/Branch.html"> <button>Branches in PH</button> </a></li>
@@ -30,73 +35,128 @@
              <a href="./public/Study.html"> <button>Study at SB</button> </a></li>
              <a href="./public/Sources.html"> <button>Sources</button> </a></li>
     </nav>
-    
-    <div class="slideshow">
-        <div class="slides">
-            <img src="./Assets/1.png" id="image">
-            <img src="./Assets/2.png" id="image">
-            <img src="./Assets/3.png" id="image">
-            <img src="./Assets/4.png" id="image">
+
+    <div class="slideshow"> <!-- container that holds all the classes for the automatic sliding section -->
+        <div class="slides"> <!-- containers that holds the automatic sliding images -->
+            <img src="./Assets/1.png" id="image"> <!-- image 1 -->
+            <img src="./Assets/2.png" id="image"> <!-- image 2 -->
+            <img src="./Assets/3.png" id="image"> <!-- image 3 -->
+            <img src="./Assets/4.png" id="image"> <!-- image 4 -->
         </div>
     </div> 
 
-    <h1 id="Welcome"> Welcome to Brewing with Starbucks! </h1>
+    <h1 id="Welcome"> Welcome to Brewing with Starbucks! </h1> <!-- title of the current webpage --> 
 
     <p id="description"> Welcome to your cozy gateway into the world of Starbucks, where every click is a sip and every page is a fresh pour. 
         Dive into the coffee belt, explore your favorite Philippine branches, peek at the menu, or settle into our 
         “Study at SB” corner for a latte productivity boost. Whether you’re here to learn, explore, or just espresso yourself, 
         this site brings the Starbucks experience straight to your screen, brewed just the way you like it. ☕✨</p>
-    
-    <div class="overall">
+      <!-- short intro to the website and the webpages -->
 
-    <div class="Overview">
-         <p class="text"> Overview: Learn how Starbucks began and how it grew into a global coffee brand. 
-            Get to know the founders, the first Starbucks store, and how the brand 
-            eventually reached the Philippines. It gives a quick look into Starbucks’ 
-            history and roots.</p>
-         <img src="./Assets/Origin.png">
+    <div class="overall"> <!-- short descriptions of each webpage -->
+
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <img src="./Assets/Origin.png"> <!--preview image of Overview webpage-->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> Overview </h2> 
+    <p> Learn how Starbucks began and how it grew into a global coffee brand. 
+        Get to know the founders, the first Starbucks store, and how the brand 
+        eventually reached the Philippines. It gives a quick look into Starbucks’ 
+        history and roots.</p> <!--preview of Overview webpage-->
+    </div>
     </div>
 
-    <div class="Branches">
-        <img src="./Assets/Branch.png">
-         <p class="text"> Branches around the Philippines: Discover Starbucks branches across the Philippines, including popular locations 
-            and commonly visited stores in Quezon City. It shows how accessible Starbucks is 
-            to customers nationwide. Perfect for finding familiar or nearby branches.</p>
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> Branches around the Philippines </h2> 
+    <p> Discover Starbucks branches across the Philippines, including popular locations 
+        and commonly visited stores in Quezon City. It shows how accessible Starbucks is 
+        to customers nationwide. Perfect for finding familiar or nearby branches.</p>
+        <!--preview of Branches webpage-->
+    </div>
+    <img src="./Assets/Branch.png"> <!--preview image of Branches webpage-->
     </div>
 
-    <div class="CB">
-         <p class="text"> The Coffee Belt: Explore where Starbucks sources its coffee beans from around the world. 
-            See the different countries in the Coffee Belt and understand why these 
-            places are ideal for growing coffee. This helps explain the quality behind every cup.</p>
-         <img src="./Assets/CB.png">
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <img src="./Assets/CofBelt.png"> <!--preview image of Coffee Belt webpage-->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> The Coffee Belt </h2> 
+    <p> Explore where Starbucks sources its coffee beans from around the world. 
+        See the different countries in the Coffee Belt and understand why these 
+        places are ideal for growing coffee. This helps explain the quality behind 
+        every cup.</p> <!--preview of Coffee Belt webpage-->
+    </div>
     </div>
 
-    <div class="Menu">
-        <img src="./Assets/Menuu.png">
-         <p class="text"> Starbucks' Menu: Find drink recommendations based on your personal preferences, there’s something for every mood and craving. 
-             Discover drinks that match different tastes, whether you like something sweet, strong, or creamy. It’s all 
-             about finding your next go-to Starbucks order</p>
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> Starbucks Menu </h2>
+    <p> Find drink recommendations based on your personal preferences, 
+        there’s something for every mood and craving. Discover drinks that match different 
+        tastes, whether you like something sweet, strong, or creamy. It’s all 
+        about finding your next go-to Starbucks order</p> <!--preview of Menu webpage-->
+    </div>
+    <img src="./Assets/Menuu.png"> <!--preview image of Menu webpage-->
     </div>
 
-    <div class="StudyatSb">
-         <p class="text"> Study at Starbucks: Enjoy the cozy and calming vibe inspired by a Starbucks café. It’s a space made for focusing, 
-            relaxing, and getting work done. Perfect for those who love studying with a coffee-shop atmosphere.</p>
-         <img src="./Assets/Studyy.png">
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <img src="./Assets/Studyy.png"> <!--preview image of Study at SB webpage-->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> Study at Starbucks </h2>
+    <p> Enjoy the cozy and calming vibe inspired by a Starbucks café. 
+        It’s a space made for focusing, relaxing, and getting work done. Perfect for those 
+        who love studying with a coffee-shop atmosphere.</p> <!--preview of Study at SB webpage-->
+    </div>
     </div>
 
-    <div class="Sources">
-        <img src="./Assets/Cats.png">
-         <p class="text"> Meet the Creators: Get to know the people behind the website and the references 
-            that made it possible. All information is properly credited to ensure accuracy and reliability. 
-            This shows the effort and research put into this website.</p>
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
+    <h2> Creators and Sources </h2> 
+    <p> Get to know the people behind the website and the references 
+        that made it possible. All information is properly credited to 
+        ensure accuracy and reliability. This shows the effort and research 
+        put into this website.</p> <!--preview of Creators + Sources webpage-->
     </div>
-    
-    
-    <footer>  
-       <div class="credits">
-       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p> 
-       <p> <span>&copy; Abigail Lorenzana </span></p> 
-       <p> <span>&copy; Bernice Lorenzo </span></p>  
+    <img src="./Assets/Cats.png"> <!--preview image of Creators + Sources webpage-->
+    </div>
+     
+    <footer>   <!-- the footer of the website -->
+       
+       <div class="footer_content">  <!-- different portions of information in the footer -->
+        <h2> Useful Links </h2> <!-- section for important links related to Starbucks -->
+        <p> 
+            <a href="https://www.starbucks.com/about-us/"> About Starbucks </a> <!-- SB Philippines's About Us -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.ph/stores"> Branches </a> <!-- SB Philippines's Branches Website -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.com/menu"> Menu </a> <!-- SB Philippines's Menu Website -->
+        </p>
+        </div>
+
+        <div class="footer_content"> <!-- different portions of information in the footer -->
+        <h2> Social Media Accounts </h2> <!-- section for Starbucks' social media accounts -->
+        <p> 
+            <a href="https://www.facebook.com/StarbucksPhilippines/"> Facebook </a> <!-- SB Philippines's Facebook account -->
+        </p>
+        <p> 
+            <a href="https://www.instagram.com/starbucksph/"> Instagram </a> <!-- SB Philippines's Instagram account -->
+        </p>
+        <p> 
+            <a href="https://x.com/starbucksph"> Twitter </a> <!-- SB Philippines's Twitter account -->
+        </p>
+        <p> 
+            <a href="https://www.youtube.com/@StarbucksPhilippines1"> Youtube </a> <!-- SB Philippines's Youtube account -->
+        </p>
+        </div>
+
+
+       <div class="credits"> <!-- credits portion of the footer -->
+       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p>  <!-- copy right of the webpage -->
+       <p> <span>&copy; Abigail Lorenzana </span></p>  <!-- copy right of the Abi (co-creator) -->
+       <p> <span>&copy; Bernice Lorenzo </span></p> 
+       <p> Note: References are stated in the Sources Page! </p> 
        </div>
     </footer>
 

@@ -26,6 +26,14 @@
 
 #### P6(Sources): This page will contain the information regarding the creators of the website (Abigail Lorenzana and Bernice Lorenzo of B2029 Lithium) as well as the list of sources used for the project.
 
+#### P7 (Log In): This webpage will contain an HTML form which will allow users to log into an account or sign in to make a new account on the website. HTML form tags such as text field, password, text area, and submit tag will be used in order to collect the user’s input. When logging in, users will type their username and password before logging into their account by pressing the log in button. When signing into a new account, users will type their username, password, first name, last name, email address, contact number, and location. This information will be saved into the user’s account information and will be used for two other webpages.
+
+#### P8 (Custom Profile): This webpage will contain an HTML form which will allow users to customize their account/profile page once they log into the website. HTML form tags such as text field, password, text area, button, and submit tag will be used in order to collect the user’s input. The page will first display information collected from the log in page such as their username, password, etc. Users may choose to change or update this information when customizing their account, inputting information such as a display name, their age, an account caption, as well as a profile picture. All of these inputs will be collected via HTML forms and will be saved once the user presses the ‘update profile’ button which saves the inputted information.
+
+#### P9 (Order): This webpage will contain an HTML form which will allow users to order drinks as well as see the total price of their order. HTML form tags such as checkbox, number, and button tag will be used in order to collect the user’s input. The page will display the menu along with a checkbox and button under each item, allowing users to select what drinks they want along with the quantity of each item. Once they click the ‘check out’ button, the webpage will display an order confirmation that includes the user's important account information like username, contact number, location, etc. along with the list of items they ordered and the total price of their order. 
+
+
+
 *****
 ### Implementation of JavaScript: 
 
@@ -59,4 +67,17 @@
 ### Sources (P6):
 #### ![Sources (P6)](Assets/Sources.png)
 
+### Log In (P7):
+#### ![Log In (P7)](Assets/LogIn.png)
 
+### Log In - Sign In (P7):
+#### ![Log In - Sign In (P7)](Assets/SignIn.png)
+
+### Custom Profile (P8):
+#### ![Custom Profile (P8)](Assets/PFP.png)
+
+### Order (P9):
+#### ![Order (P9)](Assets/Order.png)
+
+### Order - Check Out (P9):
+#### ![Order - Check Out (P9)](Assets/Checkout.png)

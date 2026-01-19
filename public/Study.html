@@ -8,39 +8,118 @@
     <meta name="author" content="Abigail M. Lorenzana, Bernice V. Lorenzo">
 
     <title> Brewing with Starbucks </title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="study.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
-    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     
+    <script src="app.js" defer></script>
 </head>
+<!--  This page will contain an immersive experience for the user, with a background image and background audio that will make it feel like the user is actually at Starbucks. 
+  The background images and background musics that can be changed based on the user’s preference, with a sidebar showing different background options that the user can choose from. -->
+
 <body>
 
+     <!-- header section containing logo and website title -->
     <header>
     <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img>
     <h1 id="Title"> BREWING WITH STARBUCKS </h1>
     </header>
 
+    <!-- navigation bar for moving between pages -->
     <nav>
-
-        <a href="../public/index.html"> <button> Home </button>  </a></li>
-        <a href="../public/Overview.html"> <button>Overview</button> </a></li>
-        <a href="../public/Branch.html"> <button>Branches in PH</button> </a></li>
-        <a href="../public/CoffeeBelt.html"> <button>Coffee Belt</button> </a></li>
-        <a href="../public/Menu.html"> <button>Menu</button> </a></li>
-        <a href="../public/Study.html"> <button>Study at SB</button> </a></li>
-        <a href="../public/Sources.html"> <button>Sources</button> </a></li>
-        <a href="../public/LogIn.html"> <button>Log-In</button> </a></li>
-        <a href="../public/Custom.html"> <button>Custom Profile</button> </a></li>
-        <a href="../public/Order.html"> <button>Order</button> </a></li>
+        
+             <a href="../index.html"> <button> Home </button>  </a></li>
+             <a href="../public/Overview.html"> <button>Overview</button> </a></li>
+             <a href="../public/Branch.html"> <button>Branches in PH</button> </a></li>
+             <a href="../public/CoffeeBelt.html"> <button>Coffee Belt</button> </a></li>
+             <a href="../public/Menu.html"> <button>Menu</button> </a></li>
+             <a href="../public/Study.html"> <button>Study at SB</button> </a></li>
+             <a href="../public/Sources.html"> <button>Sources</button> </a></li>
       
     </nav>
-    
-    <p> magaral or mkns </p>
-     <footer>  
-       <div class="credits">
-       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p> 
-       <p> <span>&copy; Abigail Lorenzana </span></p> 
-       <p> <span>&copy; Bernice Lorenzo </span></p>  
+
+<!-- Main wrapper that centers the Pomodoro timer -->
+<div class="overall"> 
+
+    <div class="container">
+        <h1 class="title">Pomodoro Timer</h1>
+
+        <hr>
+
+        <p class="timer" id="timer">25:00</p>
+
+        <div class="button-wrapper">
+            <button id="start">Start</button>
+            <button id="stop1">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</div>  
+
+<div id="container1" class="settings">
+    <button id="changeButton"></button>
+<!-- settings button and dropdown menu -->
+    <div class="settings-menu">
+        <button id="bgImageBtn">Change Background</button>
+        <button id="bgSoundBtn">Change Music</button>
+    </div>
+</div>
+
+
+    <div class="wrapper"> <!-- a container that holds all texts and images within it -->
+    <div class="info">
+    <p>The Pomodoro Technique is a time management method that helps people stay focused by working in short, dedicated bursts. 
+        Instead of long, tiring work sessions, this technique encourages concentrating on a task for a set period, making it easier to maintain productivity and avoid distractions.<br><br>
+        In this method, a single work session lasts 25 minutes, during which you focus entirely on the task at hand. 
+        After the session, a short break can be taken to rest and refresh the mind. The timer can be started, paused, or reset, giving users control over their workflow and allowing flexibility depending on their schedule or focus level.<br><br>
+        By using a 25-minute timer with simple controls, the Pomodoro Technique turns large tasks into manageable chunks. 
+        Even without tracking multiple cycles, this approach helps maintain concentration, manage time effectively, and improve overall productivity.</p>
+    </div>
+    </div>
+
+<script src="settings.js"></script>
+
+     <footer>   <!-- the footer of the website -->
+       
+       <div class="footer_content">  <!-- different portions of information in the footer -->
+        <h2> Useful Links </h2> <!-- section for important links related to Starbucks -->
+        <p> 
+            <a href="https://www.starbucks.com/about-us/"> About Starbucks </a> <!-- SB Philippines's About Us -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.ph/stores"> Branches </a> <!-- SB Philippines's Branches Website -->
+        </p>
+        <p> 
+            <a href="https://www.starbucks.com/menu"> Menu </a> <!-- SB Philippines's Menu Website -->
+        </p>
+        </div>
+
+        <div class="footer_content"> <!-- different portions of information in the footer -->
+        <h2> Social Media Accounts </h2> <!-- section for Starbucks' social media accounts -->
+        <p> 
+            <a href="https://www.facebook.com/StarbucksPhilippines/"> Facebook </a> <!-- SB Philippines's Facebook account -->
+        </p>
+        <p> 
+            <a href="https://www.instagram.com/starbucksph/"> Instagram </a> <!-- SB Philippines's Instagram account -->
+        </p>
+        <p> 
+            <a href="https://x.com/starbucksph"> Twitter </a> <!-- SB Philippines's Twitter account -->
+        </p>
+        <p> 
+            <a href="https://www.youtube.com/@StarbucksPhilippines1"> Youtube </a> <!-- SB Philippines's Youtube account -->
+        </p>
+        </div>
+
+
+       <div class="credits"> <!-- credits portion of the footer -->
+       <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p>  <!-- copy right of the webpage -->
+       <p> <span>&copy; Abigail Lorenzana </span></p>  <!-- copy right of the Abi (co-creator) -->
+       <p> <span>&copy; Bernice Lorenzo </span></p>   <!-- copy right of the Bernice (co-creator) -->
+       <p> Note: References are stated in the Sources Page! </p>
        </div>
     </footer>
 
