@@ -43,6 +43,18 @@
     
     <body>
 
+        <h1 id="greet"> Hello </h1>
+
+
+    <script> 
+    const userName = localStorage.getItem("username");
+
+    if(userName){
+        document.getElementById("greet").innerHTML = "Hello, " + userName;
+    }
+
+    </script>
+
     
 
     <footer>   <!-- the footer of the website -->
