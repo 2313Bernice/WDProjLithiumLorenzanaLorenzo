@@ -22,26 +22,26 @@ header {       /*styles the elements inside the header tag*/
 }
 
 nav {       /*styles the links and elements inside the nav tag*/
-    padding: 1rem 5%;
+    padding: 10px;
     background-color: rgb(0, 98, 65);
     margin-bottom: 2rem;
     margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
    }
   
-button{      /*styles the buttons present in the navigation bar*/
+button{      /*styles the buttons present in the navigation bar*/  
       background-color:rgb(6, 79, 54);
       border: none;
       border-radius: 10px;
       font-size: 15px;
       font-family: Starbucks;
       color: rgb(255, 255, 255);
-      padding: 1rem;
-      margin: 10px;
+      margin: 5px;
       height: 50px;
-      width: 150px;
+      width: 130px;
       transition: 0.3s;
      }
 

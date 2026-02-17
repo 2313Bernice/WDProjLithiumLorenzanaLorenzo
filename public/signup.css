@@ -1,0 +1,24 @@
+form{
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    width:30%;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(190, 142, 142, 0), rgb(67, 63, 63));
+    border-radius: 1rem;
+}
+
+h2{
+    font-size: 3rem;
+    color: rgb(5, 75, 52);
+}
+
+.input-box{
+    margin: auto;
+    padding: 10px;
+    width:80%;
+    height:20px;
+    border-radius: 1rem;
+    font-size: 17px;
+    font-family:"Oswald", sans-serif;
+}

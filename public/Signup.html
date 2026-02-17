@@ -9,16 +9,17 @@
 
     <title> Brewing with Starbucks </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="CB.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="signup.js" defer></script>
 </head>
 
-<!-- This webpage aims to show users the process and background of The Coffee Belt, and the three
- main countries where Starbucks sources their coffee beans from. -->
+<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
+ on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
+ automatically scroll down to that section that fits their choice. -->
 
 <body>
 
@@ -39,55 +40,44 @@
              <a href="../public/Order.html"> <button> Order </button> </a></li>
              <a href="../public/Sources.html"> <button>Sources</button> </a></li>
     </nav>
-
-    <h1 class="Title"> The Coffee Belt </h1> <!-- title of the current webpage -->
-
-    <p id="description"> The Coffee Belt refers to the band of tropical regions around the world where coffee grows best. 
-        This zone lies between the Tropic of Cancer and the Tropic of Capricorn, covering countries with 
-        warm climates, rich soil, and just the right mix of sunlight and rainfall. Because coffee plants 
-        are sensitive and need stable temperatures, the Coffee Belt provides the perfect environment for 
-        producing high quality beans. </p> <!-- short intro to the webpage and its contents -->
-
-    <p id="description"> Starbucks works closely with farmers across the Coffee Belt through its Coffee and Farmer Equity 
-        (C.A.F.E.) Practices. This ensures that the beans they source are ethically grown, high quality, 
-        and produced in ways that support both the environment and the livelihood of farmers. The unique 
-        climates and traditions in each region also help Starbucks create a wide variety of blends for 
-        different tastes.</p> <!-- short intro to the webpage and its contents -->
     
-    <h1 class="Title"> Three Main Coffee Regions </h1> <!-- header of the next section, the three coffee belt locations -->
+    <body>
 
-    <div class="Places"> <!-- container that holds the location information and image -->
-      <img src="../Assets/Latin.png" id="Latin">  <!-- image of Latin America's coffee farm -->
-      <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
-      <h2> Latin America </h2>
-      <p> Known for bright, clean flavors with a hint of nuttiness and cocoa. 
-        Latin American coffee is often light and easy to drink, which is why Starbucks uses
-         many beans from this region for its classic blends.</p> <!-- information regarding Latin America -->
-    </div>
-    </div>
+    <form id="lForm" method="get">
 
-    <div class="Places"> <!-- container that holds the location information and image -->
-        <img src="../Assets/Africa.png" id="Africa">  <!-- image of Africa's coffee farm -->
-      <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
-      <h2> Africa </h2>
-      <p> Famous for vibrant, fruity, and floral coffees. African beans usually have more unique 
-        flavor notes like berries or citrus, which makes them popular for single-origin Starbucks
-         Reserve coffees.</p> <!-- information regarding Africa -->
-    </div>
-    </div>
+        <h2> Sign Up </h2>
 
-    <div class="Places"> <!-- container that holds the location information and image -->
-      <img src="../Assets/Asia.png" id="Asia">  <!-- image of Asia Pacific's coffee farm -->
-      <div class="info"> <!-- classifies paragraphs/information into the class tag 'info' -->
-      <h2> Asia/Pacific </h2 >
-      <p> Known for bold, full-bodied coffees with earthy or spicy taste.
-         Many Starbucks dark roasts and “stronger-tasting” blends use beans from this region.</p> <!-- information regarding Asia Pacific -->
-    </div>
-    </div>
-    
-    <img src="../Assets/CofBeltMap.png" id="CofBeltMap">   <!-- image of The Coffee Belt Map -->
+        <br> <br>
 
-     <footer>   <!-- the footer of the website -->
+        <div>
+            <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="username" name="username" placeholder="Username" required>
+            <br> <br>
+            <input type="password" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="password" name="password" placeholder="Password" required>
+            <br> <br>
+            <input type="text" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="fname" name="fname" placeholder="First Name" required>
+            <br> <br>
+            <input type="text" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="lname" name="lname" placeholder="Last Name" required>
+            <br> <br>
+            <input type="email" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="email" name="email" placeholder="Email Address" required>
+            <br> <br>
+            <input type="number" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="num" name="num" placeholder="Contact No." required>
+            <br> <br>
+            <input type="text" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="location" name="location" placeholder="Location" required>
+            <br> <br>
+        </div>
+        
+        <div>
+        <span> Already have an account?</span> 
+        <span> <a href="LogIn.html"> Log In </a> </span>
+        </div>
+
+        <br> <br>
+
+        <button type = "submit"> Sign Up </button>
+
+    </form>
+
+    <footer>   <!-- the footer of the website -->
        
        <div class="footer_content">  <!-- different portions of information in the footer -->
         <h2> Useful Links </h2> <!-- section for important links related to Starbucks -->
