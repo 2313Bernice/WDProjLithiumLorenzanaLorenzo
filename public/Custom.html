@@ -9,7 +9,7 @@
 
     <title> Brewing with Starbucks </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="custom.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,15 +43,30 @@
     
     <body>
 
-        <h1 id="greet"> Hello </h1>
+        <div class="profile"> 
 
+        <h1 id="displayName"></h1>
+        <h2 id="age"></h2>
+
+        <p class="caption"><span id="caption"> </span></p>
+        <p class="info">Username: <span id="username"></span></p>
+        <p class="info">Password: <span id="password"></span></p>
+        <p class="info">Full Name: <span id="fullname"></span></p>
+        <p class="info">Email: <span id="email"></span></p>
+        <p class="info">Phone Number: <span id="num"></span></p>
+        <p class="info">Location: <span id="location"></span></p>
+
+        </div>
 
     <script> 
-    const userName = localStorage.getItem("username");
-
-    if(userName){
-        document.getElementById("greet").innerHTML = "Hello, " + userName;
-    }
+    
+        document.getElementById("username").innerHTML = localStorage.getItem("username");
+        document.getElementById("password").innerHTML = localStorage.getItem("password");
+        document.getElementById("caption").innerHTML = localStorage.getItem("caption") || "Welcome to Brewing with Starbucks!";
+        document.getElementById("fullname").innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+        document.getElementById("num").innerHTML = localStorage.getItem("num");
+        document.getElementById("location").innerHTML = localStorage.getItem("location");
 
     </script>
 
