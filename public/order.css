@@ -1,0 +1,143 @@
+.order-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.drink-box {
+    background-color: #e5e5e5;
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.drink-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.drink-box h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.drink-box p {
+    margin: 8px 0 15px 0;
+    font-weight: bold;
+}
+
+.select-circle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.select-circle.selected {
+    background-color: #007bff;
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-controls button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quantity-controls button:hover {
+    background-color: #555;
+}
+
+.quantity {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 20px;
+}
+
+.checkout-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 28px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content hr {
+    margin: 10px 0 20px 0;
+}
+
+.close-modal {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-modal:hover {
+    background-color: #bbb;
+}

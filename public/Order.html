@@ -9,12 +9,12 @@
 
     <title> Brewing with Starbucks </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="order.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="order.js" defer></script>
 </head>
 
 <!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
@@ -41,9 +41,333 @@
              <a href="../public/Sources.html"> <button>Sources</button> </a></li>
     </nav>
     
-    <body>
+    <section class="order-container">
 
-    
+<!-- 1 -->
+<div class="drink-box" data-name="Caramel Macchiato" data-price="220.00">
+    <div class="select-circle"></div>
+    <h3>Caramel Macchiato</h3>
+    <p>₱220.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 2 -->
+<div class="drink-box" data-name="Caramel Ribbon Crunch Frappuccino" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Caramel Ribbon Crunch Frappuccino</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 3 -->
+<div class="drink-box" data-name="White Chocolate Mocha" data-price="220.00">
+    <div class="select-circle"></div>
+    <h3>White Chocolate Mocha</h3>
+    <p>₱220.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 4 -->
+<div class="drink-box" data-name="Vanilla Sweet Cream Cold Brew" data-price="225.00">
+    <div class="select-circle"></div>
+    <h3>Vanilla Sweet Cream Cold Brew</h3>
+    <p>₱225.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 5 -->
+<div class="drink-box" data-name="Mocha Cookie Crumble Frappuccino" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Mocha Cookie Crumble Frappuccino</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 6 -->
+<div class="drink-box" data-name="Caramel Frappuccino" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Caramel Frappuccino</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 7 -->
+<div class="drink-box" data-name="Iced White Chocolate Mocha" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Iced White Chocolate Mocha</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 8 -->
+<div class="drink-box" data-name="Caffè Americano" data-price="180.00">
+    <div class="select-circle"></div>
+    <h3>Caffè Americano</h3>
+    <p>₱180.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 9 -->
+<div class="drink-box" data-name="Caffè Misto" data-price="155.00">
+    <div class="select-circle"></div>
+    <h3>Caffè Misto</h3>
+    <p>₱155.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 10 -->
+<div class="drink-box" data-name="Cold Brew" data-price="205.00">
+    <div class="select-circle"></div>
+    <h3>Cold Brew</h3>
+    <p>₱205.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 11 -->
+<div class="drink-box" data-name="Nitro Cold Brew" data-price="225.00">
+    <div class="select-circle"></div>
+    <h3>Nitro Cold Brew</h3>
+    <p>₱225.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 12 -->
+<div class="drink-box" data-name="Flat White" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Flat White</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 13 -->
+<div class="drink-box" data-name="Espresso" data-price="180.00">
+    <div class="select-circle"></div>
+    <h3>Espresso</h3>
+    <p>₱180.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 14 -->
+<div class="drink-box" data-name="Espresso Macchiato" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Espresso Macchiato</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 15 -->
+<div class="drink-box" data-name="Espresso Con Panna" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Espresso Con Panna</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 16 -->
+<div class="drink-box" data-name="Mango Dragonfruit Lemonade Refresher" data-price="190.00">
+    <div class="select-circle"></div>
+    <h3>Mango Dragonfruit Lemonade Refresher</h3>
+    <p>₱190.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 17 -->
+<div class="drink-box" data-name="Strawberry Acai with Lemonade" data-price="185.00">
+    <div class="select-circle"></div>
+    <h3>Strawberry Acai with Lemonade</h3>
+    <p>₱185.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 18 -->
+<div class="drink-box" data-name="Pink Drink" data-price="180.00">
+    <div class="select-circle"></div>
+    <h3>Pink Drink</h3>
+    <p>₱180.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 19 -->
+<div class="drink-box" data-name="Dragon Drink" data-price="185.00">
+    <div class="select-circle"></div>
+    <h3>Dragon Drink</h3>
+    <p>₱185.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 20 -->
+<div class="drink-box" data-name="Hot Chocolate" data-price="204.00">
+    <div class="select-circle"></div>
+    <h3>Hot Chocolate</h3>
+    <p>₱204.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 21 -->
+<div class="drink-box" data-name="Chai Tea Latte" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Chai Tea Latte</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 22 -->
+<div class="drink-box" data-name="Matcha Latte" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Matcha Latte</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 23 -->
+<div class="drink-box" data-name="Chocolate Chip Cream Frappuccino" data-price="205.00">
+    <div class="select-circle"></div>
+    <h3>Chocolate Chip Cream Frappuccino</h3>
+    <p>₱205.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 24 -->
+<div class="drink-box" data-name="Peppermint Mocha" data-price="200.00">
+    <div class="select-circle"></div>
+    <h3>Peppermint Mocha</h3>
+    <p>₱200.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 25 -->
+<div class="drink-box" data-name="Pumpkin Spice Latte" data-price="210.00">
+    <div class="select-circle"></div>
+    <h3>Pumpkin Spice Latte</h3>
+    <p>₱210.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>
+
+<!-- 26 -->
+<div class="drink-box" data-name="Chestnut Praline Latte" data-price="210.00">
+    <div class="select-circle"></div>
+    <h3>Chestnut Praline Latte</h3>
+    <p>₱210.00</p>
+    <div class="quantity-controls">
+        <button class="minus">-</button>
+        <span class="quantity">0</span>
+        <button class="plus">+</button>
+    </div>
+</div>     
+    </section>
+
+<!-- check out button -->
+<button class="checkout-btn">Check Out</button>
+
+<!-- Order summary -->
+<div class="modal" id="orderModal">
+    <div class="modal-content">
+        <h2 class="modal-header">Order Summary</h2>
+        <hr>
+        <div id="orderDetails"></div>
+        <button class="close-modal">Close</button>
+    </div>
+</div>
 
     <footer>   <!-- the footer of the website -->
        
@@ -75,7 +399,6 @@
             <a href="https://www.youtube.com/@StarbucksPhilippines1"> Youtube </a> <!-- SB Philippines's Youtube account -->
         </p>
         </div>
-
 
        <div class="credits"> <!-- credits portion of the footer -->
        <p id="website"> <span>&copy; 2025 Brewing with Starbucks | All Rights Reserved </span></p>  <!-- copy right of the webpage -->
