@@ -43,30 +43,80 @@
     
     <body>
 
-        <div class="profile"> 
+        <div class="profile" id="profile"> 
 
         <h1 id="displayName"></h1>
         <h2 id="age"></h2>
 
         <p class="caption"><span id="caption"> </span></p>
-        <p class="info">Username: <span id="username"></span></p>
-        <p class="info">Password: <span id="password"></span></p>
-        <p class="info">Full Name: <span id="fullname"></span></p>
-        <p class="info">Email: <span id="email"></span></p>
-        <p class="info">Phone Number: <span id="num"></span></p>
-        <p class="info">Location: <span id="location"></span></p>
+        <p class="info">Username: <span id="usernameDis"></span></p>
+        <p class="info">Password: <span id="passwordDis"></span></p>
+        <p class="info">Full Name: <span id="fullnameDis"></span></p>
+        <p class="info">Email: <span id="emailDis"></span></p>
+        <p class="info">Phone Number: <span id="numDis"></span></p>
+        <p class="info">Location: <span id="locationDis"></span></p>
+
+        <button id="update">Update Profile</button>
 
         </div>
 
+        <div class="edit-card" id="editCard">
+    <h2>Edit Profile</h2>
+
+    <form id="edit">
+        Profile Picture:
+        <input type="file" id="profileUpload" accept="image/*"><br>
+
+        Display Name:
+        <input id="displayNameIn">
+
+        Age:
+        <input id="ageIn" type="number">
+
+        Caption / Bio:
+        <textarea id="captionIn"></textarea>
+
+        First Name:
+        <input id="fnameIn">
+
+        Last Name:
+        <input id="lnameIn">
+
+        Email:
+        <input id="emailIn">
+
+        Contact Number:
+        <input id="numIn">
+
+        Location:
+        <input id="locationIn">
+
+        <button type="submit">Save Changes</button>
+        <button type="button" id="cancel">Cancel</button>
+    </form>
+</div>
+
     <script> 
-    
-        document.getElementById("username").innerHTML = localStorage.getItem("username");
-        document.getElementById("password").innerHTML = localStorage.getItem("password");
+   
+    //Displays the updated data
+        document.getElementById("usernameDis").innerHTML = localStorage.getItem("username");
+        document.getElementById("passwordDis").innerHTML = localStorage.getItem("password");
         document.getElementById("caption").innerHTML = localStorage.getItem("caption") || "Welcome to Brewing with Starbucks!";
-        document.getElementById("fullname").innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-        document.getElementById("email").innerHTML = localStorage.getItem("email");
-        document.getElementById("num").innerHTML = localStorage.getItem("num");
-        document.getElementById("location").innerHTML = localStorage.getItem("location");
+        document.getElementById("fullnameDis").innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
+        document.getElementById("emailDis").innerHTML = localStorage.getItem("email");
+        document.getElementById("numDis").innerHTML = localStorage.getItem("num");
+        document.getElementById("locationDis").innerHTML = localStorage.getItem("location");
+    
+
+    //Preload existing data 
+        document.getElementById("usernameIn").value = localStorage.getItem("username");
+        document.getElementById("passwordIn").value = localStorage.getItem("password");
+        document.getElementById("captionIn").value = localStorage.getItem("caption") || "Welcome to Brewing with Starbucks!";
+        document.getElementById("fullnameIn").value = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
+        document.getElementById("emailIn").value = localStorage.getItem("email");
+        document.getElementById("numIn").value = localStorage.getItem("num");
+        document.getElementById("locationIn").value = localStorage.getItem("location");
+
 
     </script>
 
