@@ -13,6 +13,8 @@ h2{                                           /*styles all the h2 tags*/
     color: rgb(243, 240, 240);
 }
 
+
+
 .wrapper{                            /*a container for different sections of paragraphs and photos*/
     padding: 0 15px;
     display: flex;
@@ -34,6 +36,7 @@ h2{                                           /*styles all the h2 tags*/
     border-radius: 1rem;
     color: rgb(243, 240, 240);
     text-align:justify;
+    font-size: 12px;
 }
 
 #Map{         /*styles the Map Image*/
@@ -124,3 +127,53 @@ div.scroll-container::-webkit-scrollbar-thumb {     /*Styles the scrollbar-thumb
   margin: 1rem;
 }
 
+@media(max-width:600px){
+    
+.wrapper{
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width:90%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+.info{
+    font-size:12px;
+    padding:1rem;
+}
+
+.info h2{
+  font-size: 16px;
+}
+
+#Map{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+#Map:hover{
+    width: 80%;
+    height: auto;
+}
+
+div.scroll-container img {
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 15px;
+  width:50%;
+  height: 50%;
+}
+
+div.scroll-container {
+  width: 800px;
+  white-space: nowrap;
+  background-color: rgb(12, 122, 86);
+  overflow: auto;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: auto;
+ 
+}
+
+}

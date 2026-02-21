@@ -141,3 +141,17 @@
 .close-modal:hover {
     background-color: #bbb;
 }
+
+@media(max-width:600px){
+
+    .order-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+}

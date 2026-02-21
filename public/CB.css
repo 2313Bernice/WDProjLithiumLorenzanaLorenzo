@@ -86,4 +86,41 @@ h2{                                        /*styles all the h2 tags*/
   }
 
 
+@media(max-width:600px){
+    
+.wrapper{
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width:90%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
 
+.Places{
+    flex-direction: column;
+    align-items: center;
+}
+
+#Asia, #Africa, #Latin{
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+}
+
+#Asia:hover, #Africa:hover, #Latin:hover{
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+}
+
+.info{
+    font-size:12px;
+    padding:1rem;
+}
+
+.info h2{
+  font-size: 20px;
+}
+
+}

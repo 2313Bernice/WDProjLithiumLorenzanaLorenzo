@@ -100,3 +100,18 @@
     margin: 1rem;
 }
 
+@media(max-width:600px){
+    
+.overall img{  
+    width: 20rem;
+    height: 20rem;
+}
+
+.slideshow{
+    width:95%;
+    height:100%;
+    border-radius: 1.5rem;
+    margin:auto;
+}
+
+}

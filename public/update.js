@@ -6,6 +6,7 @@ form.addEventListener("submit", function(e) {
     const disname = document.getElementById("disname").value;
     const age = document.getElementById("age").value;
     const caption = document.getElementById("caption").value;
+    const profilePic = document.getElementById("profilePic").src;
 
     const username = document.getElementById("username").value; 
     const password = document.getElementById("password").value; 
@@ -18,6 +19,7 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("disname", disname);
     localStorage.setItem("age", age);
     localStorage.setItem("caption", caption);
+    localStorage.setItem("profilePic", profilePic);
 
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
@@ -30,5 +32,11 @@ form.addEventListener("submit", function(e) {
     
     window.location.href = "Custom.html"
 
+});
 
+
+const cancel = document.getElementById("cancel");
+cancel.addEventListener("click", function() {
+    
+    window.location.href = "Custom.html";
 });

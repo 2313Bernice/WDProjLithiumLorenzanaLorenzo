@@ -10,6 +10,7 @@ function logOut(event) {
     window.location.href = "LogIn.html";
 }
 
+document.getElementById("profilePic").src = localStorage.getItem("profilePic");
 document.getElementById("displayName").textContent = localStorage.getItem("disname");
 document.getElementById("age").textContent = localStorage.getItem("age");
 document.getElementById("caption").textContent = localStorage.getItem("caption");

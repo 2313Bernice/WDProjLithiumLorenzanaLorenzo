@@ -56,6 +56,8 @@ h2{        /*styles all the h2 tags*/
     padding: 6em;
     color: white;
     border-radius: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* APA-style reference formatting */
@@ -70,4 +72,70 @@ h2{        /*styles all the h2 tags*/
     width: 100%;
     white-space: normal;
     word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+@media(max-width:600px){
+    
+#title {
+    font-size: 1.8em;
+}
+
+.creators-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.creator-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(5, 75, 52);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    margin-left: 0;
+    align-items: center;
+}
+
+.creator-card img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+.info {
+    font-size: 12px;
+    padding: 1rem;
+}
+
+.references-container {
+    padding: 1.5rem;
+    max-width: 95%;
+    width: 95%;
+    margin: 1rem auto;
+    font-size: 12px;
+}
+
+.apa-ref {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
 }
