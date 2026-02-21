@@ -1,3 +1,4 @@
+/* styling layout for all drinks */
 .order-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -7,6 +8,7 @@
     margin: auto;
 }
 
+/* styling each drink box*/
 .drink-box {
     background-color: #e5e5e5;
     border-radius: 18px;
@@ -16,21 +18,25 @@
     transition: 0.3s ease;
 }
 
+/* styling the hover effect for drink box*/
 .drink-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
+/* styling drink names*/
 .drink-box h3 {
     margin-top: 15px;
     font-size: 18px;
 }
 
+/* styling drink prices*/
 .drink-box p {
     margin: 8px 0 15px 0;
     font-weight: bold;
 }
 
+/* styling each blue selct circle*/
 .select-circle {
     position: absolute;
     top: 15px;
@@ -43,10 +49,12 @@
     transition: 0.2s;
 }
 
+/* filled circle when selected*/
 .select-circle.selected {
     background-color: #007bff;
 }
 
+/* styling quantity button container*/
 .quantity-controls {
     display: flex;
     justify-content: center;
@@ -54,6 +62,7 @@
     gap: 15px;
 }
 
+/* styling + and - buttons*/
 .quantity-controls button {
     width: 32px;
     height: 32px;
@@ -66,18 +75,21 @@
     transition: 0.2s;
 }
 
+/* styling hover effect for + and - buttons*/
 .quantity-controls button:hover {
     background-color: #555;
 }
 
+/* styling quantity numbers*/
 .quantity {
     font-size: 18px;
     font-weight: bold;
     min-width: 20px;
 }
 
+/* styling floating checkout button*/
 .checkout-btn {
-    position: fixed;
+    position: fixed; /* stays on screen */
     bottom: 30px;
     right: 30px;
     padding: 14px 28px;
@@ -92,11 +104,13 @@
     z-index: 1000;
 }
 
+/* styling hover effect for checkout*/
 .checkout-btn:hover {
     background-color: #218838;
     transform: scale(1.05);
 }
 
+/* dark bg when modal opens*/
 .modal {
     display: none;
     position: fixed;
@@ -108,6 +122,7 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+/* styling white pop-up box*/
 .modal-content {
     background-color: white;
     width: 400px;
@@ -117,16 +132,19 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* styling modal title*/
 .modal-header {
     color: #28a745;
     text-align: center;
     margin-bottom: 10px;
 }
 
+/* styling line inside modal*/
 .modal-content hr {
     margin: 10px 0 20px 0;
 }
 
+/* styling close button*/
 .close-modal {
     margin-top: 20px;
     width: 100%;
@@ -138,6 +156,7 @@
     transition: 0.2s;
 }
 
+/* styling hover effect for close button */
 .close-modal:hover {
     background-color: #bbb;
 }
