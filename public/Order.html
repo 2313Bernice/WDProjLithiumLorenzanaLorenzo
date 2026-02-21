@@ -44,12 +44,13 @@
 
     <section class="order-container">
 
+<!-- same format for all drinks -->
 <!-- 1 -->
 <div class="drink-box" data-name="Caramel Macchiato" data-price="220.00">
-    <div class="select-circle"></div>
+    <div class="select-circle"></div> <!-- blue select button -->
     <h3>Caramel Macchiato</h3>
     <p>₱220.00</p>
-    <div class="quantity-controls">
+    <div class="quantity-controls"> <!-- quantity buttons -->
         <button class="minus">-</button>
         <span class="quantity">0</span>
         <button class="plus">+</button>
@@ -360,13 +361,13 @@
 <!-- check out button -->
 <button class="checkout-btn">Check Out</button>
 
-<!-- Order summary -->
+<!-- order summary pop-up-->
 <div class="modal" id="orderModal">
     <div class="modal-content">
         <h2 class="modal-header">Order Summary</h2>
         <hr>
-        <div id="orderDetails"></div>
-        <button class="close-modal">Close</button>
+        <div id="orderDetails"></div> <!-- JS puts selected items here -->
+        <button class="close-modal">Close</button> <!-- closes pop-up -->
     </div>
 </div>
 
