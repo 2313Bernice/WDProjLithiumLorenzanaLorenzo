@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="custom.js" defer></script>
 </head>
 
 <!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
@@ -26,11 +26,11 @@
     <header> <!-- the header of the website -->
     <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img> <!-- the logo of the website -->
     <h1 id="Title"> BREWING WITH STARBUCKS </h1> <!-- the name of the website -->
+    <a href="../public/LogIn.html"> <img src="../Assets/Logo.png" id="accountLog" width="50" height="50"></a>
     </header>
 
     <nav> <!-- the navigation bar of the website -->
-             <a href="../index.html"> <button> Home </button>  </a></li>
-             <a href="../public/LogIn.html"> <button>Log In</button> </a></li>
+             <a href="../index.html"> <button> Home </button> </a></li>
              <a href="../public/Custom.html"> <button> Custom Profile</button> </a></li>
              <a href="../public/Overview.html"> <button>Overview</button> </a></li>
              <a href="../public/Branch.html"> <button>Branches in PH</button> </a></li>
@@ -44,83 +44,40 @@
     <body>
 
         <div class="profile" id="profile"> 
+        <div class="profile-content">
 
-        <h1 id="displayName"></h1>
-        <h2 id="age"></h2>
+        <div class="left">
+        <img id="profilePic" class="profilePic" src="../Assets/Logo.png" alt="Profile Picture">
+        </div>
 
-        <p class="caption"><span id="caption"> </span></p>
-        <p class="info">Username: <span id="usernameDis"></span></p>
-        <p class="info">Password: <span id="passwordDis"></span></p>
-        <p class="info">Full Name: <span id="fullnameDis"></span></p>
-        <p class="info">Email: <span id="emailDis"></span></p>
-        <p class="info">Phone Number: <span id="numDis"></span></p>
-        <p class="info">Location: <span id="locationDis"></span></p>
+        <div class="right">
+             <h1 id="displayName"> </h1>
+             <h2 id="age"></h2>
+             <br> 
 
-        <button id="update">Update Profile</button>
+             <div id="captionContainer">
+                <p id="caption"> </p>
+            </div>
+
+             <br>
+             <p class="info">Username: <span id="username"></span></p>
+             <p class="info">Password: <span id="password"></span></p>
+             <p class="info">Full Name: <span id="fullname"></span></p>
+             <p class="info">Email: <span id="email"></span></p>
+             <p class="info">Phone Number: <span id="num"></span></p>
+             <p class="info">Location: <span id="location"></span></p>
+
+             <br>
+
+             <a href="../public/Update.html"> <button> Update Profile </button> </a></li>
+             <a href="../public/LogIn.html" onclick="logOut(event)"> <button> Log Out </button> </a></li>
+        </div>
+    
+        </div>
 
         </div>
 
-        <div class="edit-card" id="editCard">
-    <h2>Edit Profile</h2>
-
-    <form id="edit">
-        Profile Picture:
-        <input type="file" id="profileUpload" accept="image/*"><br>
-
-        Display Name:
-        <input id="displayNameIn">
-
-        Age:
-        <input id="ageIn" type="number">
-
-        Caption / Bio:
-        <textarea id="captionIn"></textarea>
-
-        First Name:
-        <input id="fnameIn">
-
-        Last Name:
-        <input id="lnameIn">
-
-        Email:
-        <input id="emailIn">
-
-        Contact Number:
-        <input id="numIn">
-
-        Location:
-        <input id="locationIn">
-
-        <button type="submit">Save Changes</button>
-        <button type="button" id="cancel">Cancel</button>
-    </form>
-</div>
-
-    <script> 
-   
-    //Displays the updated data
-        document.getElementById("usernameDis").innerHTML = localStorage.getItem("username");
-        document.getElementById("passwordDis").innerHTML = localStorage.getItem("password");
-        document.getElementById("caption").innerHTML = localStorage.getItem("caption") || "Welcome to Brewing with Starbucks!";
-        document.getElementById("fullnameDis").innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-        document.getElementById("emailDis").innerHTML = localStorage.getItem("email");
-        document.getElementById("numDis").innerHTML = localStorage.getItem("num");
-        document.getElementById("locationDis").innerHTML = localStorage.getItem("location");
-    
-
-    //Preload existing data 
-        document.getElementById("usernameIn").value = localStorage.getItem("username");
-        document.getElementById("passwordIn").value = localStorage.getItem("password");
-        document.getElementById("captionIn").value = localStorage.getItem("caption") || "Welcome to Brewing with Starbucks!";
-        document.getElementById("fullnameIn").value = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-        document.getElementById("emailIn").value = localStorage.getItem("email");
-        document.getElementById("numIn").value = localStorage.getItem("num");
-        document.getElementById("locationIn").value = localStorage.getItem("location");
-
-
-    </script>
-
-    
+ 
 
     <footer>   <!-- the footer of the website -->
        

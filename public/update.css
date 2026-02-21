@@ -1,0 +1,72 @@
+.editCard {
+    width:80%;
+    padding:30px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(89, 180, 141), rgb(25, 89, 51));
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+#profilePic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    width:40%;
+    height:30px;
+    border-radius: 1rem;
+    font-size: 17px;
+    font-family:"Oswald", sans-serif;
+}
+
+/* Layout for edit card: profile picture on left, fields on right */
+.edit-content{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.edit-content .left{
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#profilePic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-content .right{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-content .right .input-box{
+    width: 100%;
+    margin: 0 0 12px 0;
+    box-sizing: border-box;
+}
+
+.edit-actions{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Make file input visually smaller in the left column */
+input[type="file"]{
+    font-size: 14px;
+}

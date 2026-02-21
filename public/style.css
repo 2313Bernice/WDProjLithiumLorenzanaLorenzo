@@ -19,6 +19,7 @@ header {       /*styles the elements inside the header tag*/
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 nav {       /*styles the links and elements inside the nav tag*/
@@ -47,6 +48,13 @@ button{      /*styles the buttons present in the navigation bar*/
 
 button:hover{       /*makes the buttons change background color when hovering over it*/
     background-color: rgb(39, 165, 123);
+}
+
+#accountLog{        /*styles the image with the id tag 'accountLog'*/
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 h2{        /*styles all the h2 tags*/

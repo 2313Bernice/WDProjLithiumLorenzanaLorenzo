@@ -9,12 +9,12 @@
 
     <title> Brewing with Starbucks </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="update.css">
     <link rel="icon" href="../Assets/Logo.png" sizes="100x100" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="login.js" defer></script>
+    <script src="update.js" defer></script>
 </head>
 
 <!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
@@ -23,12 +23,11 @@
 
 <body>
 
-   <header> <!-- the header of the website -->
+    <header> <!-- the header of the website -->
     <img src="../Assets/Logo.png" width="100" height="100" id="logo"/> </img> <!-- the logo of the website -->
     <h1 id="Title"> BREWING WITH STARBUCKS </h1> <!-- the name of the website -->
     <a href="../public/LogIn.html"> <img src="../Assets/Logo.png" id="accountLog" width="50" height="50"></a>
     </header>
-
 
     <nav> <!-- the navigation bar of the website -->
              <a href="../index.html"> <button> Home </button> </a></li>
@@ -44,32 +43,42 @@
     
     <body>
 
-    <form id="lform" method="get">
+    <div class="editCard" id="editCard">
+    <h2>Edit Profile</h2>
 
-        <h2> Log In </h2>
+    <form id="edit" method="get">
+        <div class="edit-content">
+            <div class="left">
+                <img src="images/profile.png" id="profilePic">
+                <input type="file" id="profileUpload" accept="image/jpeg, image/png, image/jpg">
+            </div>
 
-        <br> <br>
+            <div class="right">
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="disname" name="disname" placeholder="Display Name" required>
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="age" name="age" placeholder="Age" required>
+                <input type="textarea" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="caption" name="caption" placeholder="Caption (Optional)" required>
 
-        <div>
-            <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="username" name="username" placeholder="Username" required>
-            <br> <br>
-
-            <input type="password" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="password" name="password" placeholder="Password" required>
-        
-        <br> <br>
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="username" name="username" placeholder="Username" required>
+                <input type="password" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="password" name="password" placeholder="Password" required>
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="email" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="email" name="email" placeholder="Email Address" required>
+                <input type="number" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="num" name="num" placeholder="Contact No." required>
+                <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="location" name="location" placeholder="Location" required>
+            </div>
         </div>
-        
-        <div>
-        <span> Don't have an account?</span> 
-        <span> <a href="SignUp.html"> Sign Up </a> </span>
+
+        <div class="edit-actions">
+            <button type="submit"> Save Changes</button>
+            <button type="button" id="cancel"> Cancel</button>
         </div>
-
-        <br> <br>
-
-        <button type ="submit"> Log In </button>
-
     </form>
 
+    </div>
+
+     
+
+    
     <footer>   <!-- the footer of the website -->
        
        <div class="footer_content">  <!-- different portions of information in the footer -->
@@ -109,6 +118,17 @@
        <p> Note: References are stated in the Sources Page! </p>
        </div>
     </footer>
+
+    <script>
+        let profilePic = document.getElementById("profilePic");
+        let profileUpload = document.getElementById("profileUpload");
+
+        profileUpload.onchange = function(){
+            profilePic.src = URL.createObjectURL(profileUpload.files[0]);
+            localStorage.setItem("profilePic", profilePic.src);
+        }
+
+    </script>
 
 </body>
 </html>

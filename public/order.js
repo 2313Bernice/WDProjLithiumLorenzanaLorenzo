@@ -70,7 +70,13 @@ checkoutButton.addEventListener("click", function() {
     if (summaryHTML === "") {
         summaryHTML = "<p>No items selected.</p>";
     } else {
-        summaryHTML += `<hr><p><strong>Total: ₱${totalPrice.toFixed(2)}</strong></p>`;
+        summaryHTML += `<hr><p><strong>Total: ₱${totalPrice.toFixed(2)}</strong></p>` +
+        `<p class="info">Username: <span>${localStorage.getItem("username")}</span></p>`+
+        `<p class="info">Full Name: <span>${localStorage.getItem("fname")} ${localStorage.getItem("lname")} </span></p>` +
+        `<p class="info">Email: <span>${localStorage.getItem("email")}</span></p>` +
+        `<p class="info">Contact Number: <span>${localStorage.getItem("num")}</span></p>` +
+        `<p class="info">Location: <span>${localStorage.getItem("location")}</span></p>`;
+
     }
 
     orderDetails.innerHTML = summaryHTML;
@@ -81,3 +87,9 @@ checkoutButton.addEventListener("click", function() {
 closeModalButton.addEventListener("click", function() {
     modal.style.display = "none";
 });
+
+
+if (!localStorage.getItem("username")) {
+    alert("Please log in first");
+    window.location.href = "LogIn.html";
+}
