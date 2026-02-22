@@ -17,9 +17,9 @@
     <script src="signup.js" defer></script>
 </head>
 
-<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
- on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
- automatically scroll down to that section that fits their choice. -->
+<!-- This webpage allows users to create an account in order to access restricted webpages such as Custom Profile page and Order page.
+ This page is where users are redirected to if they do not have an account yet. Users will have to fill in their account info, which
+ will then be saved and used for other webpages. Once an account is created, they can log in to access the restricted webpages -->
 
 <body>
 
@@ -44,13 +44,13 @@
     
     <body>
 
-    <form id="sform" method="get">
+    <form id="sform" method="get"> <!-- the form that users will fill out to create their account -->
 
         <h2> Sign Up </h2>
 
         <br> <br>
 
-        <div>
+        <div> <!-- the input boxes where users have to fill in their account info-->
             <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="username" name="username" placeholder="Username" required>
             <br> <br>
             <input type="password" class="input-box"  onfocus="inStyle(this)" onblur="outStyle(this)" id="password" name="password" placeholder="Password" required>
@@ -67,14 +67,14 @@
             <br> <br>
         </div>
         
-        <div>
+        <div> <!-- redirects users to the Log In page if they already have an account-->
         <span> Already have an account?</span> 
         <span> <a href="LogIn.html"> Log In </a> </span>
         </div>
 
         <br> <br>
 
-        <button type = "submit"> Sign Up </button>
+        <button type = "submit"> Sign Up </button>  <!-- button that allows users to submit their account info and create their account-->
 
     </form>
 

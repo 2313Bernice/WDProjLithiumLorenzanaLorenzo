@@ -17,9 +17,9 @@
     <script src="update.js" defer></script>
 </head>
 
-<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
- on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
- automatically scroll down to that section that fits their choice. -->
+<!-- This webpage allows users to update their account profile from the Custom Profile page. This is where users are redirected to
+ when they click the "Update Profile" button. Users will have to fill in the information they wish to update (including a profile picture). Once
+ they save their changes, the updated profile information will be displayed on the Custom Profile page -->
 
 <body>
 
@@ -43,17 +43,17 @@
     
     <body>
 
-    <div class="editCard" id="editCard">
+    <div class="editCard" id="editCard">  <!-- the container that holds all content related to updating profile information -->
     <h2>Edit Profile</h2>
 
-    <form id="edit" method="get">
+    <form id="edit" method="get"> <!-- the form that users will fill out to update their profile info-->
         <div class="edit-content">
             <div class="left">
                 <img src="images/profile.png" id="profilePic">
-                <input type="file" id="profileUpload" accept="image/jpeg, image/png, image/jpg">
+                <input type="file" id="profileUpload" accept="image/jpeg, image/png, image/jpg"> <!-- the input box where users can upload their profile picture-->
             </div>
 
-            <div class="right">
+            <div class="right"> <!-- the input boxes where users will fill out their updated profile info-->
                 <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="disname" name="disname" placeholder="Display Name" required>
                 <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="age" name="age" placeholder="Age" required>
                 <input type="textarea" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="caption" name="caption" placeholder="Caption (Optional)" required>
@@ -68,9 +68,9 @@
             </div>
         </div>
 
-        <div class="edit-actions">
-            <button type="submit"> Save Changes</button>
-            <button type="button" id="cancel"> Cancel</button>
+        <div class="edit-actions">      <!-- container that holds the save changes button and cancel button-->
+            <button type="submit"> Save Changes</button> <!--button that allows users to save their changes-->
+            <button type="button" id="cancel"> Cancel</button> <!-- button that allows users to cancel their changes-->
         </div>
     </form>
 

@@ -1,4 +1,6 @@
-.profile {
+/* Overall, this stylesheet styles the elements of Custom.html.*/
+
+.profile {   /*adds styling to the container that holds all profile information*/
     width:80%;
     padding:30px;
     margin: auto;
@@ -7,26 +9,26 @@
     box-shadow:0 6px 18px rgba(0,0,0,0.15);
 }
 
-.info{
+.info{  /*styles the information displayed on the profile card*/
     font-size: 16px;
     color: rgb(255, 255, 255);
     margin-right: auto;
     margin-bottom: 0;
 }
 
-#displayName{
+#displayName{       /*styles the user's display name*/
     font-size: 2.5rem;
     color: rgb(243, 240, 240);
     margin-bottom: 0;
 }
-
-#age{
+  
+#age{    /*styles the user's age*/
     font-size: 2rem;
     color: rgb(243, 240, 240);
     margin-top: 0;
 }
 
-#captionContainer{          
+#captionContainer{           /*styles the container that holds the user's caption*/
     width: 650px;
     margin-right: auto;
     background-size: cover;
@@ -37,7 +39,7 @@
     text-align:justify;
 }
 
-#caption{
+#caption{           /*styles the user's caption*/
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -46,7 +48,7 @@
     color:rgb(0, 0, 0)
 }
 
-/* Layout for edit card: profile picture on left, fields on right */
+/* styles and adds layouting for the profile card (profile picture on left, info on right) */
 .profile-content{
     display: flex;
     gap: 2rem;
@@ -77,7 +79,7 @@
     margin-left: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {    /*adjusts the layout and styling of the elements for a smaller screen size*/
     .profile {
         width: 90%;
         padding: 1.5rem;

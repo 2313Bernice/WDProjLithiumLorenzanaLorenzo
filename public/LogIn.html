@@ -17,9 +17,9 @@
     <script src="login.js" defer></script>
 </head>
 
-<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
- on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
- automatically scroll down to that section that fits their choice. -->
+<!-- This webpage allows users to log into an account via a username and password. By logging into an account, users will have access
+ to restricted webpages such as the Custom Profile page and the Order page. If users do not have an account when logging in, they will
+ be redirected to the Sign Up page where they can make their account. -->
 
 <body>
 
@@ -44,13 +44,13 @@
     
     <body>
 
-    <form id="lform" method="get">
+    <form id="lform" method="get">  <!-- the form that users will fill out to log into their account -->
 
         <h2> Log In </h2>
 
         <br> <br>
 
-        <div>
+        <div>  <!-- input boxes where users fill in their username and password to log in-->
             <input type="text" class="input-box" onfocus="inStyle(this)" onblur="outStyle(this)" id="username" name="username" placeholder="Username" required>
             <br> <br>
 
@@ -59,14 +59,14 @@
         <br> <br>
         </div>
         
-        <div>
+        <div> <!--redirects users to Sign Up page if they do not have an account yet-->
         <span> Don't have an account?</span> 
         <span> <a href="SignUp.html"> Sign Up </a> </span>
         </div>
 
         <br> <br>
 
-        <button type ="submit"> Log In </button>
+        <button type ="submit"> Log In </button> <!-- button that allows users to submit their login info-->
 
     </form>
 

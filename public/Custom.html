@@ -17,9 +17,10 @@
     <script src="custom.js" defer></script>
 </head>
 
-<!-- This webpage aims to help users effectively use a menu by letting them pick specific choices based
- on their preferrences/tastes. By clicking the button that corresponds to their taste, the webpage will 
- automatically scroll down to that section that fits their choice. -->
+<!-- This webpage allows users to customize their account profile once they have logged in. This webpage
+ is restricted at first, only allowing logged-in users to access and open it. Once users have logged in,
+their initial account information will be displayed in their profile. Users have the ability to update and customize
+their profile information. -->
 
 <body>
 
@@ -43,16 +44,16 @@
     
     <body>
 
-        <div class="profile" id="profile"> 
-        <div class="profile-content">
+        <div class="profile" id="profile"> <!-- the container that holds all profile information and content -->
+        <div class="profile-content"> <!--classifies user's account info into class "profile-content"-->
 
         <div class="left">
-        <img id="profilePic" class="profilePic"></img>
+        <img id="profilePic" class="profilePic"></img> <!-- user's profile picture, which has a default image if not set -->
          </div>
         </div>
 
         <div class="right">
-             <h1 id="displayName"> </h1>
+             <h1 id="displayName"> </h1>  <!--displays user's account information-->
              <h2 id="age"></h2>
              <br> 
 
@@ -70,8 +71,8 @@
 
              <br>
 
-             <a href="../public/Update.html"> <button> Update Profile </button> </a></li>
-             <a href="../public/LogIn.html" onclick="logOut(event)"> <button> Log Out </button> </a></li>
+             <a href="../public/Update.html"> <button> Update Profile </button> </a></li>  <!--redirects user to Update.html in order to update their profile info-->
+             <a href="../public/LogIn.html" onclick="logOut(event)"> <button> Log Out </button> </a></li> <!--lets user log out of their account-->
         </div>
     
         </div>

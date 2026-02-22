@@ -1,4 +1,6 @@
-form{
+/* Overall, this stylesheet styles the elements of SignUp.html.*/
+
+form{   /*styles the form element that contains the signup fields and buttons*/
     font-size: 15px;
     text-align: center;
     margin: auto;
@@ -8,12 +10,12 @@ form{
     border-radius: 1rem;
 }
 
-h2{
+h2{ /*styles all the h2 tags*/
     font-size: 3rem;
     color: rgb(5, 75, 52);
 }
 
-.input-box{
+.input-box{      /*styles the input fields for user's account information*/
     margin: auto;
     padding: 10px;
     width:80%;
@@ -23,7 +25,7 @@ h2{
     font-family:"Oswald", sans-serif;
 }
 
-@media(max-width:600px){
+@media(max-width:600px){    /*adjusts the layout and styling of the elements for a smaller screen size*/
 
 form{
     font-size: 15px;
