@@ -147,3 +147,77 @@ button:hover{  /* hover animation for all buttons */
     border-radius: 1rem;
     color: rgb(243, 240, 240);
     text-align:justify;}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*header images responsive */
+#logo {
+  width: 80px;
+  height: auto;
+}
+
+#accountLog {
+  width: 40px;
+  height: auto;
+}
+
+/*makes the containers more flexible */
+.overall,
+.container,
+.wrapper,
+.settings,
+footer {
+  width: 100%;
+}
+
+/*prevents horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/*for mobile screen adjustments*/
+@media (max-width: 768px) {
+
+  header { /*makes header items stack and center on smaller screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #Title { /*reduces the size of the main website title */
+    font-size: 1.5rem;
+  }
+
+  .container { /*adjusts the main pomodoro container width */
+    width: 90%;
+    margin: auto;
+  }
+
+  .button-wrapper { /*stacks the start, stop, reset buttons vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .wrapper { /*stacks text sections vertically */
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+
+  footer { /*makes the footer sections stack vertically and center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
