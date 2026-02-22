@@ -11,6 +11,7 @@ form.addEventListener("submit", function(e) { //triggers an event when the 'subm
 
    //compares data from LogIn.html and localStorage for account validation
     if (logUser === storUser && logPass === storPass){   //if the log in is valid, it brings the user to Custom.html
+        localStorage.setItem("loggedIn", "true");  //sets loggedIn to true when user logs in successfully
         window.location.href = "Custom.html";             
     }
 
@@ -22,13 +23,13 @@ form.addEventListener("submit", function(e) { //triggers an event when the 'subm
 
 });
 
-function inStyle(ele){
-    console.log(ele);
+function inStyle(ele){    //styles the input box when the user is interacting with it
+    console.log(ele); 
     ele.style.backgroundColor = "rgb(37, 111, 80)";
     ele.style.color="white";
 }
 
-function outStyle(ele){
+function outStyle(ele){ //styles the input box when the user is not interacting with it
     console.log(ele);
     ele.style.backgroundColor = "rgb(242, 242, 255)";
      ele.style.color="black";

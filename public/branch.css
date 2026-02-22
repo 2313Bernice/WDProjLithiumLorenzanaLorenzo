@@ -36,7 +36,7 @@ h2{                                           /*styles all the h2 tags*/
     border-radius: 1rem;
     color: rgb(243, 240, 240);
     text-align:justify;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 #Map{         /*styles the Map Image*/
