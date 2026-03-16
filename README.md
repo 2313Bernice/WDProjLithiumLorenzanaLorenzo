@@ -32,6 +32,13 @@
 
 #### P9 (Order): This webpage will contain an HTML form which will allow users to order drinks as well as see the total price of their order. HTML form tags such as checkbox, number, and button tag will be used in order to collect the user’s input. The page will display the menu along with a checkbox and button under each item, allowing users to select what drinks they want along with the quantity of each item. Once they click the ‘check out’ button, the webpage will display an order confirmation that includes the user's important account information like username, contact number, location, etc. along with the list of items they ordered and the total price of their order. 
 
+*****
+### Final Modification Proposal
+
+#### P10(Drinker Journal): This will be inside the Custom Profile Page in the form of a button that opens to a tab when clicked. This will allow users to create and give their ratings on Starbucks drinks, branches, or atmospheres of their choice via a star rating along with additional comments. They can create as many ratings as they like as well as delete these ratings via a delete button included in every rating made. CRUD is applied through the creation and reading of ratings, updating the current ratings to add more, and deleting ratings via a delete button.
+
+#### P11(Custom Profile History): This will be inside the Custom Profile page in the form of a button that opens to a tab when clicked. This will allow users to view previously created profile page updates, each update being labelled and saved (ex. Custom Change 1, Custom Change 2, etc.). Each change can be viewed when clicking the 'view change' button of that corresponding update, which when clicked will display in the actual user profile as a preview. There is also a save button, which allows users to save that specific update in order to turn that into the current profile and a delete button which deletes specific updates that users do not want to keep. CRUD is applied through the creation of profile changes, reading of previous profile changes, updating the current profile to changes of the user's liking, along with deleting previous changes that users do not want to save. 
+
 
 
 *****
@@ -74,10 +81,22 @@
 #### ![Log In - Sign In (P7)](Assets/SignIn.png)
 
 ### Custom Profile (P8):
-#### ![Custom Profile (P8)](Assets/PFP.png)
+#### ![Custom Profile (P8)](Assets/PFP(Q4).png)
 
 ### Order (P9):
 #### ![Order (P9)](Assets/Order.png)
 
 ### Order - Check Out (P9):
 #### ![Order - Check Out (P9)](Assets/Checkout.png)
+
+### Final Modification Wireframes:
+
+### Drinker Journal (P10):
+#### ![Drinker Journal (P10)](Assets/Journal.png)
+
+### Custom Profile History (P11):
+#### ![Custom Profile History](Assets/CPHistory.png)
+
+### Custom Profile History - Save Current (P11):
+#### ![Custom Profile History-Save Current](Assets/CPHCurrent.png)
+
