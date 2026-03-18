@@ -9,27 +9,21 @@
 
 #### Starbucks is known for its high-quality coffee and its warm and inviting atmosphere. Each drink is brewed with attention and precision, down to the very care they put when harvesting their authentic coffee beans from their Coffee Belt around the world. The establishments itself are meant to serve as a ‘third-place’ atmosphere for customers, an inviting and accessible place where they can relax, socialize, work, and feel comfortable with a drink to accompany them. This website is meant to encapsulate that atmosphere, giving users an overview as to how Starbucks came to be, their process of collecting their authentic coffee beans, different branches of SB in the Philippines, and their menu. This website also allows for an immersive experience where users can study or relax through a digital Starbucks.  
 
-#### We chose to make this the main focus of our website not only because of the variations of topics we can cover, but also because of our own personal experiences with Starbucks. As avid coffee lovers, their coffees offer a wide range of choices that makes it so that we are not limited to just a few flavors of coffee. They also offer other varieties of drinks such as refreshers for those who do not drink coffee or those who wish to drink something else. Starbucks is also our go-to hangout place, whether it is for hanging out with friends or a comfortable atmosphere to work on requirements. With these personal experiences, we wish to connect with other coffee lovers and help people find a place of comfort– like how Starbucks is a place of comfort for us. 
+#### We chose to make this the main focus of our website not only because of the variations of topics we can cover, but also because of our own personal experiences with Starbucks. As avid coffee lovers, their coffees offer a wide range of choices that makes it so that we are not limited to just a few flavors of coffee. They also offer other varieties of drinks such as refreshers for those who do not drink coffee or those who wish to drink something else. Starbucks is also our go-to hangout place, whether it is for hanging out with friends or a comfortable atmosphere to work on requirements. With these personal experiences, we wish to connect with other coffee lovers and help people find a place of comfort– like how Starbucks is a place of comfort for us.
 
 *****
 ### Final Modification Proposal
 
-#### P10(Drinker Journal): This will be inside the Custom Profile Page in the form of a button that opens to a tab when clicked. This will allow users to create and give their ratings on Starbucks drinks, branches, or atmospheres of their choice via a star rating along with additional comments. They can create as many ratings as they like as well as delete these ratings via a delete button included in every rating made. CRUD is applied through the creation and reading of ratings, updating the current ratings to add more, and deleting ratings via a delete button.
-
-#### P11(Custom Profile History): This will be inside the Custom Profile page in the form of a button that opens to a tab when clicked. This will allow users to view previously created profile page updates, each update being labelled and saved (ex. Custom Change 1, Custom Change 2, etc.). Each change can be viewed when clicking the 'view change' button of that corresponding update, which when clicked will display in the actual user profile as a preview. There is also a save button, which allows users to save that specific update in order to turn that into the current profile and a delete button which deletes specific updates that users do not want to keep. CRUD is applied through the creation of profile changes, reading of previous profile changes, updating the current profile to changes of the user's liking, along with deleting previous changes that users do not want to save. 
+#### P10(Custom Profile History): This will be inside the Custom Profile page in the form of a button that opens to a tab when clicked. This will allow users to view previously created profile page updates, each update being labelled and saved (ex. Custom Change 1, Custom Change 2, etc.). Each change can be viewed when clicking the 'view change' button of that corresponding update, which when clicked will display in the actual user profile as a preview. There is also a save button, which allows users to save that specific update in order to turn that into the current profile and a delete button which deletes specific updates that users do not want to keep. CRUD is applied through the creation of profile changes, reading of previous profile changes, updating the current profile to changes of the user's liking, along with deleting previous changes that users do not want to save.
 
 
 ### Final Modification Wireframes:
 
-### Drinker Journal (P10):
-#### ![Drinker Journal (P10)](Assets/Journal.png)
-
-### Custom Profile History (P11):
+### Custom Profile History (P10):
 #### ![Custom Profile History](Assets/CPHistory.png)
 
-### Custom Profile History - Save Current (P11):
+### Custom Profile History - Save Current (P10):
 #### ![Custom Profile History-Save Current](Assets/CPHCurrent.png)
-
 ***** 
 ### Webpage Breakdown: 
 
