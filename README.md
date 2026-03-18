@@ -12,6 +12,25 @@
 #### We chose to make this the main focus of our website not only because of the variations of topics we can cover, but also because of our own personal experiences with Starbucks. As avid coffee lovers, their coffees offer a wide range of choices that makes it so that we are not limited to just a few flavors of coffee. They also offer other varieties of drinks such as refreshers for those who do not drink coffee or those who wish to drink something else. Starbucks is also our go-to hangout place, whether it is for hanging out with friends or a comfortable atmosphere to work on requirements. With these personal experiences, we wish to connect with other coffee lovers and help people find a place of comfort– like how Starbucks is a place of comfort for us. 
 
 *****
+### Final Modification Proposal
+
+#### P10(Drinker Journal): This will be inside the Custom Profile Page in the form of a button that opens to a tab when clicked. This will allow users to create and give their ratings on Starbucks drinks, branches, or atmospheres of their choice via a star rating along with additional comments. They can create as many ratings as they like as well as delete these ratings via a delete button included in every rating made. CRUD is applied through the creation and reading of ratings, updating the current ratings to add more, and deleting ratings via a delete button.
+
+#### P11(Custom Profile History): This will be inside the Custom Profile page in the form of a button that opens to a tab when clicked. This will allow users to view previously created profile page updates, each update being labelled and saved (ex. Custom Change 1, Custom Change 2, etc.). Each change can be viewed when clicking the 'view change' button of that corresponding update, which when clicked will display in the actual user profile as a preview. There is also a save button, which allows users to save that specific update in order to turn that into the current profile and a delete button which deletes specific updates that users do not want to keep. CRUD is applied through the creation of profile changes, reading of previous profile changes, updating the current profile to changes of the user's liking, along with deleting previous changes that users do not want to save. 
+
+
+### Final Modification Wireframes:
+
+### Drinker Journal (P10):
+#### ![Drinker Journal (P10)](Assets/Journal.png)
+
+### Custom Profile History (P11):
+#### ![Custom Profile History](Assets/CPHistory.png)
+
+### Custom Profile History - Save Current (P11):
+#### ![Custom Profile History-Save Current](Assets/CPHCurrent.png)
+
+***** 
 ### Webpage Breakdown: 
 
 #### P1(Overview): This page will contain information regarding the origins of Starbucks. This includes the founders of Starbucks, the first Starbucks ever established in the world, the first Starbucks established in the Philippines, and other relevant information regarding their origins. 
@@ -31,15 +50,6 @@
 #### P8 (Custom Profile): This webpage will contain an HTML form which will allow users to customize their account/profile page once they log into the website. HTML form tags such as text field, password, text area, button, and submit tag will be used in order to collect the user’s input. The page will first display information collected from the log in page such as their username, password, etc. Users may choose to change or update this information when customizing their account, inputting information such as a display name, their age, an account caption, as well as a profile picture. All of these inputs will be collected via HTML forms and will be saved once the user presses the ‘update profile’ button which saves the inputted information.
 
 #### P9 (Order): This webpage will contain an HTML form which will allow users to order drinks as well as see the total price of their order. HTML form tags such as checkbox, number, and button tag will be used in order to collect the user’s input. The page will display the menu along with a checkbox and button under each item, allowing users to select what drinks they want along with the quantity of each item. Once they click the ‘check out’ button, the webpage will display an order confirmation that includes the user's important account information like username, contact number, location, etc. along with the list of items they ordered and the total price of their order. 
-
-*****
-### Final Modification Proposal
-
-#### P10(Drinker Journal): This will be inside the Custom Profile Page in the form of a button that opens to a tab when clicked. This will allow users to create and give their ratings on Starbucks drinks, branches, or atmospheres of their choice via a star rating along with additional comments. They can create as many ratings as they like as well as delete these ratings via a delete button included in every rating made. CRUD is applied through the creation and reading of ratings, updating the current ratings to add more, and deleting ratings via a delete button.
-
-#### P11(Custom Profile History): This will be inside the Custom Profile page in the form of a button that opens to a tab when clicked. This will allow users to view previously created profile page updates, each update being labelled and saved (ex. Custom Change 1, Custom Change 2, etc.). Each change can be viewed when clicking the 'view change' button of that corresponding update, which when clicked will display in the actual user profile as a preview. There is also a save button, which allows users to save that specific update in order to turn that into the current profile and a delete button which deletes specific updates that users do not want to keep. CRUD is applied through the creation of profile changes, reading of previous profile changes, updating the current profile to changes of the user's liking, along with deleting previous changes that users do not want to save. 
-
-
 
 *****
 ### Implementation of JavaScript: 
@@ -89,14 +99,4 @@
 ### Order - Check Out (P9):
 #### ![Order - Check Out (P9)](Assets/Checkout.png)
 
-### Final Modification Wireframes:
-
-### Drinker Journal (P10):
-#### ![Drinker Journal (P10)](Assets/Journal.png)
-
-### Custom Profile History (P11):
-#### ![Custom Profile History](Assets/CPHistory.png)
-
-### Custom Profile History - Save Current (P11):
-#### ![Custom Profile History-Save Current](Assets/CPHCurrent.png)
 
