@@ -71,6 +71,7 @@ their profile information. -->
 
              <br>
 
+             <button onclick="openHistoryModal()" class="history-btn">View Profile History</button> <!--opens profile history modal-->
              <a href="../public/Update.html"> <button> Update Profile </button> </a></li>  <!--redirects user to Update.html in order to update their profile info-->
              <a href="../public/LogIn.html" onclick="logOut(event)"> <button> Log Out </button> </a></li> <!--lets user log out of their account-->
         </div>
@@ -79,7 +80,49 @@ their profile information. -->
 
         </div>
 
- 
+    <!-- Profile History Modal -->
+    <div id="historyModal" class="history-modal">
+        <div class="history-modal-content">
+            <div class="history-modal-header">
+                <h2>Profile History</h2>
+                <button class="close-btn" onclick="closeHistoryModal()">&times;</button>
+            </div>
+            <div class="history-modal-body">
+                <div class="history-tabs">
+                    <button class="history-tab-btn active" onclick="switchHistoryTab('list')">My History</button>
+                    <button class="history-tab-btn" id="previewTabBtn" onclick="switchHistoryTab('preview')" style="display:none;">Preview</button>
+                </div>
+
+                <!-- History List View -->
+                <div id="historyListView" class="history-view active">
+                    <button onclick="saveCurrentAsHistory()" class="save-history-btn">+ Save Current Profile</button>
+                    <div id="historyList" class="history-items">
+                        <p class="empty-message">No profile history yet.</p>
+                    </div>
+                </div>
+
+                <!-- Preview View -->
+                <div id="historyPreviewView" class="history-view">
+                    <div class="history-preview-card">
+                        <img id="previewHistoryPic" src="images/profile.png" class="preview-pic">
+                        <div class="preview-details">
+                            <p><strong>Display Name:</strong> <span id="previewHistoryName"></span></p>
+                            <p><strong>Age:</strong> <span id="previewHistoryAge"></span></p>
+                            <p><strong>Caption:</strong> <span id="previewHistoryCaption"></span></p>
+                            <p><strong>Username:</strong> <span id="previewHistoryUsername"></span></p>
+                            <p><strong>Email:</strong> <span id="previewHistoryEmail"></span></p>
+                            <p><strong>Phone:</strong> <span id="previewHistoryNum"></span></p>
+                            <p><strong>Location:</strong> <span id="previewHistoryLocation"></span></p>
+                        </div>
+                    </div>
+                    <div class="preview-actions">
+                        <button onclick="applyPreviewHistory()" class="apply-btn">Apply to Profile</button>
+                        <button onclick="switchHistoryTab('list')" class="back-btn">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>   <!-- the footer of the website -->
        
