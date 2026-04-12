@@ -26,9 +26,6 @@ document.getElementById("num").textContent = localStorage.getItem("num");
 document.getElementById("location").textContent = localStorage.getItem("location");
 
 
-/* =========================
-   DISPLAY PROFILE DATA
-========================= */
 const savedProfilePic = localStorage.getItem("profilePic");
 
 if (savedProfilePic) {
@@ -40,23 +37,14 @@ if (savedProfilePic) {
 document.getElementById("displayName").textContent = localStorage.getItem("disname");
 document.getElementById("age").textContent = localStorage.getItem("age");
 document.getElementById("caption").textContent = localStorage.getItem("caption");
-
 document.getElementById("username").textContent = localStorage.getItem("username");
 document.getElementById("password").textContent = localStorage.getItem("password");
-
-document.getElementById("fullname").textContent =
-    localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-
+document.getElementById("fullname").textContent = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
 document.getElementById("email").textContent = localStorage.getItem("email");
 document.getElementById("num").textContent = localStorage.getItem("num");
 document.getElementById("location").textContent = localStorage.getItem("location");
 
 
-/* =========================
-   PROFILE HISTORY (CRUD)
-========================= */
-
-/* Get current profile data */
 function getCurrentProfileData() {
     return {
         profilePic: localStorage.getItem("profilePic"),
@@ -73,23 +61,15 @@ function getCurrentProfileData() {
     };
 }
 
-
-/* Load history */
 function loadProfileHistory() {
     const historyJSON = localStorage.getItem("profileHistory");
     return historyJSON ? JSON.parse(historyJSON) : [];
 }
 
-
-/* Save history */
 function saveHistoryToStorage(history) {
     localStorage.setItem("profileHistory", JSON.stringify(history));
 }
 
-
-/* =========================
-   CREATE
-========================= */
 function saveCurrentAsHistory() {
     const history = loadProfileHistory();
     const entryNumber = history.length + 1;
@@ -117,10 +97,6 @@ function saveCurrentAsHistory() {
     alert("Profile saved to history as '" + entryName + "'!");
 }
 
-
-/* =========================
-   READ
-========================= */
 function renderHistoryList() {
     const history = loadProfileHistory();
     const historyList = document.getElementById("historyList");
@@ -154,10 +130,6 @@ function renderHistoryList() {
     historyList.innerHTML = html;
 }
 
-
-/* =========================
-   VIEW (PREVIEW)
-========================= */
 function viewHistoryEntry(entryId) {
     const history = loadProfileHistory();
     let entry = null;
@@ -197,10 +169,6 @@ function viewHistoryEntry(entryId) {
     switchHistoryTab("preview");
 }
 
-
-/* =========================
-   APPLY (UPDATE PROFILE)
-========================= */
 function applyHistoryEntry(entryId) {
     const history = loadProfileHistory();
     let entry = null;
@@ -225,7 +193,7 @@ function applyHistoryEntry(entryId) {
 }
 
 
-/* Apply preview */
+
 function applyPreviewHistory() {
     if (!window.currentHistoryEntry) {
         alert("No history entry selected!");
@@ -240,7 +208,7 @@ function applyPreviewHistory() {
 }
 
 
-/* Apply data to profile */
+
 function applyHistoryToProfile(profileData) {
     if (profileData.profilePic)
         localStorage.setItem("profilePic", profileData.profilePic);
@@ -275,7 +243,7 @@ function applyHistoryToProfile(profileData) {
     if (profileData.location)
         localStorage.setItem("location", profileData.location);
 
-    // update DOM
+    
     document.getElementById("profilePic").src = profileData.profilePic;
     document.getElementById("displayName").textContent = profileData.disname;
     document.getElementById("age").textContent = profileData.age;
@@ -290,9 +258,6 @@ function applyHistoryToProfile(profileData) {
 }
 
 
-/* =========================
-   DELETE
-========================= */
 function deleteHistoryEntry(entryId) {
     const history = loadProfileHistory();
     let entryIndex = -1;
@@ -319,10 +284,6 @@ function deleteHistoryEntry(entryId) {
     }
 }
 
-
-/* =========================
-   MODAL CONTROLS
-========================= */
 function openHistoryModal() {
     document.getElementById("historyModal").classList.add("active");
     renderHistoryList();
@@ -344,7 +305,6 @@ function switchHistoryTab(tab) {
 }
 
 
-/* CLOSE ON OUTSIDE CLICK */
 window.addEventListener("click", function (event) {
     const modal = document.getElementById("historyModal");
     if (event.target === modal) {
