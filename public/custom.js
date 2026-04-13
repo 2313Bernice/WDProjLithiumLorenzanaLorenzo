@@ -250,8 +250,7 @@ function applyHistoryToProfile(profileData) {
     document.getElementById("caption").textContent = profileData.caption;
     document.getElementById("username").textContent = profileData.username;
     document.getElementById("password").textContent = profileData.password;
-    document.getElementById("fullname").textContent =
-        profileData.fname + " " + profileData.lname;
+    document.getElementById("fullname").textContent = profileData.fname + " " + profileData.lname;
     document.getElementById("email").textContent = profileData.email;
     document.getElementById("num").textContent = profileData.num;
     document.getElementById("location").textContent = profileData.location;
