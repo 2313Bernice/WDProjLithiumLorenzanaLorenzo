@@ -65,3 +65,20 @@ function outStyle(ele){   //styles the input box when the user is not interactin
      ele.style.color="black";
     
 }
+
+const fileInput = document.getElementById("profilePicInput");
+const previewImg = document.getElementById("profilePic");
+
+fileInput.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            previewImg.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
