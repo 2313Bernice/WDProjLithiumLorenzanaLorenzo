@@ -6,19 +6,23 @@ form.addEventListener("submit", function(e) { //triggers an event when the 'subm
     const disname = document.getElementById("disname").value; //assigns the user input into usable data
     const age = document.getElementById("age").value;
     const caption = document.getElementById("caption").value;
-    const profilePic = document.getElementById("profilePic").src;
+
+    const fileInput = document.getElementById("profilePicInput");
+    const file = fileInput.files[0];
+
     const username = document.getElementById("username").value; 
     const password = document.getElementById("password").value; 
     const fname = document.getElementById("fname").value; 
     const lname = document.getElementById("lname").value; 
     const email = document.getElementById("email").value; 
-    const num = JSON.stringify(document.getElementById("num").value); 
-    const location = JSON.stringify(document.getElementById("location").value);
+    const num = document.getElementById("num").value; 
+    const location = document.getElementById("location").value;
 
+function saveData(profilePicData) {
     localStorage.setItem("disname", disname);   // sets user input into localStorage (updates profile info)
     localStorage.setItem("age", age);
     localStorage.setItem("caption", caption);
-    localStorage.setItem("profilePic", profilePic);
+    localStorage.setItem("profilePic", profilePicData);
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
     localStorage.setItem("fname", fname);
@@ -26,10 +30,21 @@ form.addEventListener("submit", function(e) { //triggers an event when the 'subm
     localStorage.setItem("email", email);
     localStorage.setItem("num", num);
     localStorage.setItem("location", location);
-
     
     window.location.href = "Custom.html" //redirects user to Custom.html after updating their profile
 
+}
+
+if (file) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            saveData(event.target.result); // Base64 string
+        };
+        reader.readAsDataURL(file);
+    } else {
+        const existingPic = localStorage.getItem("profilePic") || "images/profile.png";
+        saveData(existingPic);
+    }
 });
 
 

@@ -40,8 +40,6 @@
              <a href="../public/Order.html"> <button> Order </button> </a></li>
              <a href="../public/Sources.html"> <button>Sources</button> </a></li>
     </nav>
-    
-    <body>
 
     <div class="editCard" id="editCard">  <!-- the container that holds all content related to updating profile information -->
     <h2>Edit Profile</h2>
@@ -50,7 +48,7 @@
         <div class="edit-content">
             <div class="left">
                 <img src="images/profile.png" id="profilePic">
-                <input type="file" id="profileUpload" accept="image/jpeg, image/png, image/jpg"> <!-- the input box where users can upload their profile picture-->
+                <input type="file" id="profilePicInput" accept="image/jpeg, image/png, image/jpg"> <!-- the input box where users can upload their profile picture-->
             </div>
 
             <div class="right"> <!-- the input boxes where users will fill out their updated profile info-->
@@ -118,17 +116,6 @@
        <p> Note: References are stated in the Sources Page! </p>
        </div>
     </footer>
-
-    <script>
-        let profilePic = document.getElementById("profilePic");
-        let profileUpload = document.getElementById("profileUpload");
-
-        profileUpload.onchange = function(){
-            profilePic.src = URL.createObjectURL(profileUpload.files[0]);
-            localStorage.setItem("profilePic", profilePic.src);
-        }
-
-    </script>
 
 </body>
 </html>

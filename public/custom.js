@@ -9,31 +9,11 @@ function logOut(event) {           //Allows the user to log off.
     localStorage.setItem("loggedIn", "false");  //sets loggedIn to false when user logs out without deleting data from localStorage (keeps account info)
     window.location.href = "LogIn.html"; //Redirects the user to the login page
 }
-
-
-//Displays user information by retrieving data from localStorage and inserting it into its designated HTML element
-document.getElementById("profilePic").src = localStorage.getItem("profilePic");            
-document.getElementById("displayName").textContent = localStorage.getItem("disname");
-document.getElementById("age").textContent = localStorage.getItem("age");
-document.getElementById("caption").textContent = localStorage.getItem("caption");
-
-document.getElementById("profilePic").src = localStorage.getItem("profilePic");
-document.getElementById("username").textContent = localStorage.getItem("username");
-document.getElementById("password").textContent = localStorage.getItem("password");
-document.getElementById("fullname").textContent = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
-document.getElementById("email").textContent = localStorage.getItem("email");
-document.getElementById("num").textContent = localStorage.getItem("num");
-document.getElementById("location").textContent = localStorage.getItem("location");
-
-
 const savedProfilePic = localStorage.getItem("profilePic");
 
-if (savedProfilePic) {
-    document.getElementById("profilePic").src = savedProfilePic;
-} else {
-    document.getElementById("profilePic").src = "images/profile.png";
-}
-
+//Displays user information by retrieving data from localStorage and inserting it into its designated HTML element
+document.getElementById("profilePic").src =
+    savedProfilePic ? savedProfilePic : "images/profile.png";          
 document.getElementById("displayName").textContent = localStorage.getItem("disname");
 document.getElementById("age").textContent = localStorage.getItem("age");
 document.getElementById("caption").textContent = localStorage.getItem("caption");
@@ -150,13 +130,8 @@ function viewHistoryEntry(entryId) {
 
     const data = entry.data;
 
-    if (data.profilePic) {
-        localStorage.setItem("profilePic", data.profilePic);
-        document.getElementById("profilePic").src = data.profilePic;
-    }
-
     document.getElementById("previewHistoryPic").src =
-        data.profilePic || "images/profile.png";
+        data.profilePic ? data.profilePic : "images/profile.png";
 
     document.getElementById("previewHistoryName").textContent = data.disname || "N/A";
     document.getElementById("previewHistoryAge").textContent = data.age || "N/A";
@@ -244,7 +219,8 @@ function applyHistoryToProfile(profileData) {
         localStorage.setItem("location", profileData.location);
 
     
-    document.getElementById("profilePic").src = profileData.profilePic;
+    document.getElementById("profilePic").src =
+        profileData.profilePic ? profileData.profilePic : "images/profile.png";
     document.getElementById("displayName").textContent = profileData.disname;
     document.getElementById("age").textContent = profileData.age;
     document.getElementById("caption").textContent = profileData.caption;
