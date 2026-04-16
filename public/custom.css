@@ -127,8 +127,7 @@
     }
 }
 
-/* Profile History Modal Styles */
-.history-btn {
+.history-btn {   /*styles the button that opens the profile history modal*/
     background: linear-gradient(135deg, #59b48d 0%, #3a8b6f 100%);
     color: white;
     border: none;
@@ -143,12 +142,12 @@
     min-width: 180px; 
 }
 
-.history-btn:hover {
+.history-btn:hover {   /*adds a hover effect to the history button*/
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(89, 180, 141, 0.4);
 }
 
-.history-modal {
+.history-modal {    /*adds styling and layouting to the profile history modal (initially hidden)*/
     display: none;
     position: fixed;
     z-index: 1000;
@@ -160,18 +159,19 @@
     animation: fadeIn 0.3s ease;
 }
 
-.history-modal.active {
+.history-modal.active {   /*adds styling and layouting to the profile history modal (active)*/
+    display: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn {   /*defines the fade-in animation used for the modal background and content*/
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-.history-modal-content {
+.history-modal-content {      /*styles the content area of the profile history modal*/
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -183,12 +183,12 @@
     animation: slideIn 0.3s ease;
 }
 
-@keyframes slideIn {
+@keyframes slideIn {        /*defines the slide-in animation used for the modal content*/
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
-.history-modal-header {
+.history-modal-header {       /*styles the header area of the profile history modal*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,13 +197,13 @@
     padding-bottom: 15px;
 }
 
-.history-modal-header h2 {
+.history-modal-header h2 {    /*styles the title text in the modal header*/
     margin: 0;
     color: #333;
     font-size: 1.5rem;
 }
 
-.close-btn {
+.close-btn {        /*styles the close button in the modal header*/
     background: none;
     border: none;
     font-size: 28px;
@@ -212,18 +212,18 @@
     transition: color 0.3s ease;
 }
 
-.close-btn:hover {
+.close-btn:hover {    /*adds a hover effect to the close button*/
     color: #333;
 }
 
-.history-tabs {
+.history-tabs {     /*styles the container that holds the tab buttons for switching between list and preview views in the modal*/
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.history-tab-btn {
+.history-tab-btn {       /*styles the buttons used to switch between list and preview views in the modal*/
     padding: 10px 20px;
     border: none;
     background: transparent;
@@ -234,25 +234,25 @@
     transition: all 0.3s ease;
 }
 
-.history-tab-btn:hover {
+.history-tab-btn:hover {    /*adds a hover effect to the tab buttons*/
     color: #59b48d;
 }
 
-.history-tab-btn.active {
+.history-tab-btn.active {     /*styles the active tab button to indicate which view is currently selected*/
     color: #59b48d;
     border-bottom-color: #59b48d;
 }
 
-.history-view {
+.history-view {    /*styles the container for each view (list and preview) in the modal (nitially hidden)*/
     display: none;
 }
 
-.history-view.active {
+.history-view.active {    /*styles the container for each view (list and preview) in the modal (active)*/
     display: block;
     animation: fadeIn 0.3s ease;
 }
 
-.save-history-btn {
+.save-history-btn {    /*adds styling to the button used to save the current profile data to history*/
     background: linear-gradient(135deg, #59b48d 0%, #3a8b6f 100%);
     color: white;
     border: none;
@@ -265,23 +265,23 @@
     transition: all 0.3s ease;
 }
 
-.save-history-btn:hover {
+.save-history-btn:hover {  /*adds styling to the button used to save the current profile data to history when hovered*/
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(89, 180, 141, 0.4);
 }
 
-.history-items {
+.history-items {  /*styles the container that holds the list of profile history entries in the list view of the modal*/
     max-height: 400px;
     overflow-y: auto;
 }
 
-.empty-message {
+.empty-message {    /*styles the default message displayed when there is no history data*/
     text-align: center;
     color: #999;
     padding: 30px;
 }
 
-.history-item {
+.history-item {    /*styles each individual profile history entry in the list view of the modal*/
     padding: 12px;
     background: #f9f9f9;
     border-left: 4px solid #59b48d;
@@ -293,28 +293,28 @@
     transition: all 0.3s ease;
 }
 
-.history-item:hover {
+.history-item:hover {   /*adds a hover effect to each individual profile history entry in the list view of the modal*/
     background: #f0f7f4;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.history-item-info h4 {
+.history-item-info h4 {   /*adds styling to the title text*/
     margin: 0 0 5px 0;
     color: #333;
 }
 
-.history-item-date {
+.history-item-date {   /*adds styling to the date text*/
     font-size: 0.85rem;
     color: #999;
     margin: 0;
 }
 
-.history-item-actions {
+.history-item-actions {  /*adds styling to the container that contains the action buttons*/
     display: flex;
     gap: 8px;
 }
 
-.view-history-btn, .apply-history-btn, .delete-history-btn {
+.view-history-btn, .apply-history-btn, .delete-history-btn {    /*adds styling to the buttons used to view, apply, and delete*/
     padding: 6px 12px;
     border: none;
     border-radius: 4px;
@@ -324,34 +324,34 @@
     transition: all 0.3s ease;
 }
 
-.view-history-btn {
+.view-history-btn {    /*adds styling to the button used to view*/
     background: #59b48d;
     color: white;
 }
 
-.view-history-btn:hover {
+.view-history-btn:hover {  /*adds a hover style to the button used to view*/
     background: #3a8b6f;
 }
 
-.apply-history-btn {
-    background: #4a90e2;
+.apply-history-btn {    /*adds styling to the button used to apply*/
+    background: #e2ce4a;
     color: white;
 }
 
-.apply-history-btn:hover {
-    background: #357abd;
+.apply-history-btn:hover {  /*adds a hover style to the button used to apply*/
+    background: #d4ae30;
 }
 
-.delete-history-btn {
+.delete-history-btn {   /*adds styling to the button used to delete*/
     background: #e74c3c;
     color: white;
 }
 
-.delete-history-btn:hover {
+.delete-history-btn:hover {   /*adds a hover style to the button used to delete*/
     background: #c0392b;
 }
 
-.history-preview-card {
+.history-preview-card {   /*adds styling to the preview card*/
     background: linear-gradient(135deg, #59b48d 0%, #196959 100%);
     padding: 20px;
     border-radius: 10px;
@@ -361,7 +361,7 @@
     gap: 20px;
 }
 
-.preview-pic {
+.preview-pic {  /*adds styling to the profile picture*/
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -369,23 +369,23 @@
     object-fit: cover;
 }
 
-.preview-details {
+.preview-details {    /*adds styling to the container that holds the profile details in the preview card*/
     flex: 1;
 }
 
-.preview-details p {
+.preview-details p {  /*adds styling to the profile details text in the preview card*/
     margin: 8px 0;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.preview-actions {
+.preview-actions {   /*adds styling to the container that holds the action buttons in the preview card*/
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.apply-btn, .back-btn {
+.apply-btn, .back-btn {   /*adds styling to the buttons used to apply the previewed history entry or go back to the list view*/
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -395,22 +395,22 @@
     flex: 1;
 }
 
-.apply-btn {
+.apply-btn {   /*add styling to the apply button*/
     background: #4a90e2;
     color: white;
 }
 
-.apply-btn:hover {
+.apply-btn:hover {   /*adds a hover style to the apply button*/
     background: #357abd;
     transform: translateY(-2px);
 }
 
-.back-btn {
+.back-btn {   /*adds styling to the back button*/
     background: #ddd;
     color: #333;
 }
 
-.back-btn:hover {
+.back-btn:hover {  /*adds a hover style to the back button*/
     background: #ccc;
 }
 

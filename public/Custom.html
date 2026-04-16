@@ -80,7 +80,7 @@ their profile information. -->
 
         </div>
 
-    <!-- Profile History Modal -->
+   <!--the profile history modal, allowing users to view their profile history, along with saving, creating, applying, and deleting profile history entries-->
     <div id="historyModal" class="history-modal">
         <div class="history-modal-content">
             <div class="history-modal-header">
@@ -93,7 +93,7 @@ their profile information. -->
                     <button class="history-tab-btn" id="previewTabBtn" onclick="switchHistoryTab('preview')" style="display:none;">Preview</button>
                 </div>
 
-                <!-- History List View -->
+                <!--allows users to view history list-->
                 <div id="historyListView" class="history-view active">
                     <button onclick="saveCurrentAsHistory()" class="save-history-btn">+ Save Current Profile</button>
                     <div id="historyList" class="history-items">
@@ -101,7 +101,7 @@ their profile information. -->
                     </div>
                 </div>
 
-                <!-- Preview View -->
+                <!--Allows users to view the preview of a specific profile history entry-->
                 <div id="historyPreviewView" class="history-view">
                     <div class="history-preview-card">
                         <img id="previewHistoryPic" src="images/profile.png" class="preview-pic">
