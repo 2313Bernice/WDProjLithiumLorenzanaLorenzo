@@ -12,8 +12,7 @@ function logOut(event) {           //Allows the user to log off.
 const savedProfilePic = localStorage.getItem("profilePic");
 
 //Displays user information by retrieving data from localStorage and inserting it into its designated HTML element
-document.getElementById("profilePic").src =
-    savedProfilePic ? savedProfilePic : "images/profile.png";          
+document.getElementById("profilePic").src =  savedProfilePic ||"images/profile.png";          
 document.getElementById("displayName").textContent = localStorage.getItem("disname");
 document.getElementById("age").textContent = localStorage.getItem("age");
 document.getElementById("caption").textContent = localStorage.getItem("caption");
@@ -24,8 +23,8 @@ document.getElementById("email").textContent = localStorage.getItem("email");
 document.getElementById("num").textContent = localStorage.getItem("num");
 document.getElementById("location").textContent = localStorage.getItem("location");
 
-//Gets the current profile data from localStorage and returns it as an object for use in saving to history or applying from history
-function getCurrentProfileData() {
+//gets the current profile data from localStorage and returns it as an object for use in saving to history or applying from history
+function currentData() {
     return {
         profilePic: localStorage.getItem("profilePic"),
         disname: localStorage.getItem("disname"),
@@ -41,20 +40,25 @@ function getCurrentProfileData() {
     };
 }
 
-//Loads the profile history from localStorage, returning an array of history entries or an empty array if no history exists
-function loadProfileHistory() {
+//loads the profile history from localStorage, returning an array of history entries or an empty array if no history exists
+function loadList() {
     const historyJSON = localStorage.getItem("profileHistory");
-    return historyJSON ? JSON.parse(historyJSON) : [];
+
+    if(!historyJSON) {
+        return [];
+    }
+
+    return JSON.parse(historyJSON);
 }
 
 //Saves the given profile history array to localStorage as a JSON string
-function saveHistoryToStorage(history) {
+function saveList(history) {
     localStorage.setItem("profileHistory", JSON.stringify(history));
 }
 
 //Saves the current profile data as a new entry in the profile history, prompting the user for a name for the entry and then updating the history list display
-function saveCurrentAsHistory() {
-    const history = loadProfileHistory();
+function saveCurrent() {
+    const history = loadList();
     const entryNumber = history.length + 1;
 
     const entryName = prompt(
@@ -62,9 +66,10 @@ function saveCurrentAsHistory() {
         "Custom Change " + entryNumber
     );
 
-    if (!entryName || entryName.trim() === "") return;
+    if (!entryName || entryName.trim() === "") 
+        return;
 
-    const profileData = getCurrentProfileData();
+    const profileData = currentData();
 
     const newEntry = {
         id: Date.now(),
@@ -74,21 +79,20 @@ function saveCurrentAsHistory() {
     };
 
     history.push(newEntry);
-    saveHistoryToStorage(history);
-    renderHistoryList();
+    saveList(history);
+    showList();
 
     alert("Profile saved to history as '" + entryName + "'!");
 }
 
 //Renders the profile history list in the history modal, displaying each entry with options to view, apply, or delete an entry.
 //If no history entries exist, it shows a default message prompting the user to create a new entry.
-function renderHistoryList() {
-    const history = loadProfileHistory();
+function showList() {
+    const history = loadList();
     const historyList = document.getElementById("historyList");
 
     if (history.length === 0) {
-        historyList.innerHTML =
-            "<p class='empty-message'>No current profile history. Add a new entry!</p>";
+        historyList.innerHTML = "<p class='empty-message'>No current profile history. Add a new entry!</p>";
         return;
     }
 
@@ -97,19 +101,20 @@ function renderHistoryList() {
     for (let i = 0; i < history.length; i++) {
         const entry = history[i];
 
-        html += "<div class='history-item'>";
-        html += "<div class='history-item-info'>";
-        html += "<h4>" + entry.name + "</h4>";
-        html += "<p class='history-item-date'>Saved: " + entry.timestamp + "</p>";
-        html += "</div>";
+        html += `
+        <div class="history-item">
+            <div class="history-item-info">
+                <h4>${entry.name}</h4>
+                <p class="history-item-date">Saved: ${entry.timestamp}</p>
+            </div>
 
-        html += "<div class='history-item-actions'>";
-        html += "<button class='view-history-btn' onclick='viewHistoryEntry(" + entry.id + ")'>View</button>";
-        html += "<button class='apply-history-btn' onclick='applyHistoryEntry(" + entry.id + ")'>Apply</button>";
-        html += "<button class='delete-history-btn' onclick='deleteHistoryEntry(" + entry.id + ")'>Delete</button>";
-        html += "</div>";
-
-        html += "</div>";
+            <div class="history-item-actions">
+                <button class="view-history-btn" onclick="viewEntry(${entry.id})">View</button>
+                <button class="apply-history-btn" onclick="applyEntry(${entry.id})">Apply</button>
+                <button class="delete-history-btn" onclick="deleteEntry(${entry.id})">Delete</button>
+            </div>
+        </div> 
+        `;
     }
 
     historyList.innerHTML = html;
@@ -117,8 +122,8 @@ function renderHistoryList() {
 
 //Displays the details of a specific history entry in the preview tab of the history modal
 //This allows users to see a preview of the profile data saved for that specific history entry
-function viewHistoryEntry(entryId) {
-    const history = loadProfileHistory();
+function viewEntry(entryId) {
+    const history = loadList();
     let entry = null;
 
     for (let i = 0; i < history.length; i++) {
@@ -136,24 +141,21 @@ function viewHistoryEntry(entryId) {
     window.currentHistoryEntry = entry;
 
     const data = entry.data;
+    document.getElementById("previewPic").src = data.profilePic || "images/profile.png";
+    document.getElementById("previewName").textContent = data.disname || "N/A";
+    document.getElementById("previewAge").textContent = data.age || "N/A";
+    document.getElementById("previewCaption").textContent = data.caption || "N/A";
+    document.getElementById("previewUsername").textContent = data.username || "N/A";
+    document.getElementById("previewEmail").textContent = data.email || "N/A";
+    document.getElementById("previewNum").textContent = data.num || "N/A";
+    document.getElementById("previewLocation").textContent = data.location || "N/A";
 
-    document.getElementById("previewHistoryPic").src =
-        data.profilePic ? data.profilePic : "images/profile.png";
-
-    document.getElementById("previewHistoryName").textContent = data.disname || "N/A";
-    document.getElementById("previewHistoryAge").textContent = data.age || "N/A";
-    document.getElementById("previewHistoryCaption").textContent = data.caption || "N/A";
-    document.getElementById("previewHistoryUsername").textContent = data.username || "N/A";
-    document.getElementById("previewHistoryEmail").textContent = data.email || "N/A";
-    document.getElementById("previewHistoryNum").textContent = data.num || "N/A";
-    document.getElementById("previewHistoryLocation").textContent = data.location || "N/A";
-
-    switchHistoryTab("preview");
+    switchTab("preview");
 }
 
 //Applies the profile data from a specific history entry to the current profile
-function applyHistoryEntry(entryId) {
-    const history = loadProfileHistory();
+function applyEntry(entryId) {
+    const history = loadList();
     let entry = null;
 
     for (let i = 0; i < history.length; i++) {
@@ -168,67 +170,88 @@ function applyHistoryEntry(entryId) {
         return;
     }
 
-    applyHistoryToProfile(entry.data);
+    applyProfile(entry.data);
 
     alert("Profile updated with '" + entry.name + "'!");
-    closeHistoryModal();
+    closeModal();
     location.reload();
 }
 
 
 //Applies the profile data from the currently previewed history entry to the current profile
-function applyPreviewHistory() {
+function applyPreview() {
     if (!window.currentHistoryEntry) {
         alert("No history entry selected!");
         return;
     }
 
-    applyHistoryToProfile(window.currentHistoryEntry.data);
+    applyProfile(window.currentHistoryEntry.data);
 
     alert("Profile updated with '" + window.currentHistoryEntry.name + "'!");
-    closeHistoryModal();
+    closeModal();
     location.reload();
 }
 
 
 //Applies the given profile data to the current profile by updating localStorage and refreshing the displayed profile information on the page
-function applyHistoryToProfile(profileData) {
+function applyProfile(profileData) {
+
     if (profileData.profilePic)
+    { 
         localStorage.setItem("profilePic", profileData.profilePic);
-
-    if (profileData.disname)
+    }
+       
+    if (profileData.disname) 
+    {
         localStorage.setItem("disname", profileData.disname);
-
+    }
+        
     if (profileData.age)
+    {
         localStorage.setItem("age", profileData.age);
-
+    }
+        
     if (profileData.caption)
+    {
         localStorage.setItem("caption", profileData.caption);
-
+    }
+        
     if (profileData.username)
+    {
         localStorage.setItem("username", profileData.username);
-
+    }
+        
     if (profileData.password)
+    {
         localStorage.setItem("password", profileData.password);
-
+    }
+        
     if (profileData.fname)
+    {
         localStorage.setItem("fname", profileData.fname);
-
+    }
+        
     if (profileData.lname)
+    {
         localStorage.setItem("lname", profileData.lname);
-
+    }
+        
     if (profileData.email)
+    {
         localStorage.setItem("email", profileData.email);
-
+    }
+        
     if (profileData.num)
+    {
         localStorage.setItem("num", profileData.num);
-
+    }
+        
     if (profileData.location)
+    {
         localStorage.setItem("location", profileData.location);
-
-    
-    document.getElementById("profilePic").src =
-        profileData.profilePic ? profileData.profilePic : "images/profile.png";
+    }
+        
+    document.getElementById("profilePic").src = profileData.profilePic ||"images/profile.png";
     document.getElementById("displayName").textContent = profileData.disname;
     document.getElementById("age").textContent = profileData.age;
     document.getElementById("caption").textContent = profileData.caption;
@@ -241,8 +264,8 @@ function applyHistoryToProfile(profileData) {
 }
 
 //Deletes a specific history entry from the profile history after confirming with the user, then updates the history list display
-function deleteHistoryEntry(entryId) {
-    const history = loadProfileHistory();
+function deleteEntry(entryId) {
+    const history = loadList();
     let entryIndex = -1;
 
     for (let i = 0; i < history.length; i++) {
@@ -261,32 +284,34 @@ function deleteHistoryEntry(entryId) {
 
     if (confirm("Delete '" + entryName + "'?")) {
         history.splice(entryIndex, 1);
-        saveHistoryToStorage(history);
-        renderHistoryList();
+        saveList(history);
+        showList();
         alert("History entry deleted!");
     }
 }
 
 
 //Opens the history modal and renders the profile history list for the user to view, apply, or delete history entries
-function openHistoryModal() {
+function openModal() {
     document.getElementById("historyModal").classList.add("active");
-    renderHistoryList();
+    showList();
 }
 
-
 //Closes the history modal and resets it to the default list view
-function closeHistoryModal() {
+function closeModal() {
     document.getElementById("historyModal").classList.remove("active");
     switchHistoryTab("list");
 }
 
 //Switches between the list view and preview view tabs in the history modal, showing the appropriate content based on the selected tab
-function switchHistoryTab(tab) {
+function switchTab(tab) {
+
     if (tab === "list") {
         document.getElementById("historyListView").classList.add("active");
         document.getElementById("historyPreviewView").classList.remove("active");
-    } else {
+    } 
+    
+    else {
         document.getElementById("historyListView").classList.remove("active");
         document.getElementById("historyPreviewView").classList.add("active");
     }
@@ -295,7 +320,8 @@ function switchHistoryTab(tab) {
 //Closes the history modal if the user clicks outside of the modal content area, providing a convenient way to exit the modal without needing to click a close button
 window.addEventListener("click", function (event) {
     const modal = document.getElementById("historyModal");
+
     if (event.target === modal) {
-        closeHistoryModal();
+        closeModal();
     }
 });
