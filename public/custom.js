@@ -60,7 +60,7 @@ function saveCurrent() {     //saves the current profile data as a new entry in 
 
     const entryName = prompt(
         "Enter a name for this entry (e.g., Preset 1 " + entryNumber + "):",
-        "Preset 1 " + entryNumber
+        "Preset " + entryNumber
     );
 
     if (!entryName || entryName.trim() === "") {
