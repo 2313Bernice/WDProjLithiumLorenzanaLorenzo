@@ -23,8 +23,7 @@ document.getElementById("email").textContent = localStorage.getItem("email");
 document.getElementById("num").textContent = localStorage.getItem("num");
 document.getElementById("location").textContent = localStorage.getItem("location");
 
-//gets the current profile data from localStorage and returns it as an object for use in saving to history or applying from history
-function currentData() {
+function currentData() {    //gets the current profile data from localStorage and returns it as an object for use in saving to history or applying from history
     return {
         profilePic: localStorage.getItem("profilePic"),
         disname: localStorage.getItem("disname"),
@@ -40,8 +39,7 @@ function currentData() {
     };
 }
 
-//loads the profile history from localStorage, returning an array of history entries or an empty array if no history exists
-function loadList() {
+function loadList() {    //loads the profile history from localStorage, returning an array of history entries or an empty array if no history exists
 
     const historyJSON = localStorage.getItem("profileHistory");
 
@@ -52,13 +50,11 @@ function loadList() {
     return JSON.parse(historyJSON);
 }
 
-//Saves the given profile history array to localStorage as a JSON string
-function saveList(history) {
+function saveList(history) {   //saves the given profile history array to localStorage as a JSON string
     localStorage.setItem("profileHistory", JSON.stringify(history));
 }
 
-//Saves the current profile data as a new entry in the profile history, prompting the user for a name for the entry and then updating the history list display
-function saveCurrent() {
+function saveCurrent() {     //saves the current profile data as a new entry in the profile history, prompting the user for a name for the entry and then updating the history list display
     const history = loadList();
     const entryNumber = history.length + 1;
 
@@ -155,8 +151,7 @@ function viewEntry(entryId) {
     switchTab("preview");
 }
 
-//Applies the profile data from a specific history entry to the current profile
-function applyEntry(entryId) {
+function applyEntry(entryId) {  //applies the profile data from a specific history entry to the current profile
     const history = loadList();
     let entry = null;
 
@@ -179,9 +174,7 @@ function applyEntry(entryId) {
     location.reload();
 }
 
-
-//Applies the profile data from the currently previewed history entry to the current profile
-function applyPreview() {
+function applyPreview() {    //applies the profile data from the currently previewed history entry to the current profile
     if (!window.currentHistoryEntry) {
         alert("No history entry selected!");
         return;
@@ -194,9 +187,7 @@ function applyPreview() {
     location.reload();
 }
 
-
-//Applies the given profile data to the current profile by updating localStorage and refreshing the displayed profile information on the page
-function applyProfile(profileData) {
+function applyProfile(profileData) {   //applies the given profile data to the current profile by updating localStorage and refreshing the displayed profile information on the page
 
     const fields = ["profilePic", "disname", "age", "caption", "username", 
         "password", "fname", "lname", "email", "num", "location"];
@@ -221,8 +212,7 @@ function applyProfile(profileData) {
     document.getElementById("location").textContent = profileData.location;
 }
 
-//Deletes a specific history entry from the profile history after confirming with the user, then updates the history list display
-function deleteEntry(entryId) {
+function deleteEntry(entryId) {     //deletes a specific history entry from the profile history after confirming with the user, then updates the history list display
     const history = loadList();
     let entryIndex = -1;
 
@@ -248,21 +238,18 @@ function deleteEntry(entryId) {
     }
 }
 
-
-//Opens the history modal and renders the profile history list for the user to view, apply, or delete history entries
-function openModal() {
+function openModal() {   //opens the history modal and renders the profile history list for the user to view, apply, or delete history entries
     document.getElementById("historyModal").classList.add("active");
     showList();
 }
 
-//Closes the history modal and resets it to the default list view
-function closeModal() {
+function closeModal() {    //closes the history modal and resets it to the default list view
     document.getElementById("historyModal").classList.remove("active");
     switchHistoryTab("list");
 }
 
-//Switches between the list view and preview view tabs in the history modal, showing the appropriate content based on the selected tab
-function switchTab(tab) {
+
+function switchTab(tab) {      //switches between the list view and preview view tabs in the history modal, showing the appropriate content based on the selected tab
 
     if (tab === "list") {
         document.getElementById("historyListView").classList.add("active");
@@ -275,8 +262,7 @@ function switchTab(tab) {
     }
 }
 
-//Closes the history modal if the user clicks outside of the modal content area, providing a convenient way to exit the modal without needing to click a close button
-window.addEventListener("click", function (event) {
+window.addEventListener("click", function (event) {     //closes the history modal if the user clicks outside of the modal content area, providing a convenient way to exit the modal without needing to click a close button
     const modal = document.getElementById("historyModal");
 
     if (event.target === modal) {
