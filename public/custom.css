@@ -55,7 +55,7 @@
     align-items: flex-start;
 }
 
-.profile-content .left{
+.profile-content .left{ /*styles the left section containing the profile picture */
     flex: 0 0 220px;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
     gap: 0.75rem;
 }
 
-#profilePic{
+#profilePic{  /*styles the profile image */
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -72,7 +72,7 @@
 }
 
 
-.profile-content .right{
+.profile-content .right{ /*styles the right section containing user details */
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -125,16 +125,10 @@
         width: 100%;
         max-width: 100%;
     }
-
-    .view-history-btn, .apply-history-btn, .delete-history-btn {
-        font-size: 0.75rem;
-        padding: 6px 10px;
-        width: 60px;
-    }
-
 }
 
-.history-btn {   /*styles the button that opens the profile history modal*/
+/* Profile History Modal Styles */
+.history-btn {
     background: linear-gradient(135deg, #59b48d 0%, #3a8b6f 100%);
     color: white;
     border: none;
@@ -149,12 +143,12 @@
     min-width: 180px; 
 }
 
-.history-btn:hover {   /*adds a hover effect to the history button*/
+.history-btn:hover { /*Adds hover animation for interactivity */
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(89, 180, 141, 0.4);
 }
 
-.history-modal {    /*adds styling and layouting to the profile history modal (initially hidden)*/
+.history-modal { /*Styles the modal overlay background */
     display: none;
     position: fixed;
     z-index: 1000;
@@ -166,19 +160,18 @@
     animation: fadeIn 0.3s ease;
 }
 
-.history-modal.active {   /*adds styling and layouting to the profile history modal (active)*/
-    display: none;
+.history-modal.active { /*Displays modal when activated */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@keyframes fadeIn {   /*defines the fade-in animation used for the modal background and content*/
+@keyframes fadeIn { /*Fade-in animation for modal */
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-.history-modal-content {      /*styles the content area of the profile history modal*/
+.history-modal-content { /*Styles the modal content container */
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -190,12 +183,12 @@
     animation: slideIn 0.3s ease;
 }
 
-@keyframes slideIn {        /*defines the slide-in animation used for the modal content*/
+@keyframes slideIn { /*Slide-in animation for modal */
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
-.history-modal-header {       /*styles the header area of the profile history modal*/
+.history-modal-header { /*Styles header section of modal */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,13 +197,13 @@
     padding-bottom: 15px;
 }
 
-.history-modal-header h2 {    /*styles the title text in the modal header*/
+.history-modal-header h2 { /*Styles modal title */
     margin: 0;
     color: #333;
     font-size: 1.5rem;
 }
 
-.close-btn {        /*styles the close button in the modal header*/
+.close-btn {  /* Styles close (X) button */
     background: none;
     border: none;
     font-size: 28px;
@@ -219,19 +212,18 @@
     transition: color 0.3s ease;
 }
 
-.close-btn:hover {    /*adds a hover effect to the close button*/
+.close-btn:hover {
     color: #333;
 }
 
-.history-tabs {     /*styles the container that holds the tab buttons for switching between list and preview views in the modal*/
+.history-tabs { /*Styles tab navigation */
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.history-tab-btn {       /*styles the buttons used to switch between list and preview views in the modal*/
-    padding: 10px 20px;
+.history-tab-btn { /*Styles individual tab buttons */    padding: 10px 20px;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -241,25 +233,25 @@
     transition: all 0.3s ease;
 }
 
-.history-tab-btn:hover {    /*adds a hover effect to the tab buttons*/
+.history-tab-btn:hover {
     color: #59b48d;
 }
 
-.history-tab-btn.active {     /*styles the active tab button to indicate which view is currently selected*/
+.history-tab-btn.active { /*Highlights active tab */
     color: #59b48d;
     border-bottom-color: #59b48d;
 }
 
-.history-view {    /*styles the container for each view (list and preview) in the modal (nitially hidden)*/
+.history-view { /*Hides inactive tab content */
     display: none;
 }
 
-.history-view.active {    /*styles the container for each view (list and preview) in the modal (active)*/
+.history-view.active { /*Displays active tab content */
     display: block;
     animation: fadeIn 0.3s ease;
 }
 
-.save-history-btn {    /*adds styling to the button used to save the current profile data to history*/
+.save-history-btn { /*Styles button for saving profile history */
     background: linear-gradient(135deg, #59b48d 0%, #3a8b6f 100%);
     color: white;
     border: none;
@@ -272,23 +264,23 @@
     transition: all 0.3s ease;
 }
 
-.save-history-btn:hover {  /*adds styling to the button used to save the current profile data to history when hovered*/
+.save-history-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(89, 180, 141, 0.4);
 }
 
-.history-items {  /*styles the container that holds the list of profile history entries in the list view of the modal*/
+.history-items { /*Container for history entries */
     max-height: 400px;
     overflow-y: auto;
 }
 
-.empty-message {    /*styles the default message displayed when there is no history data*/
+.empty-message { /*Styles message when no history exists */
     text-align: center;
     color: #999;
     padding: 30px;
 }
 
-.history-item {    /*styles each individual profile history entry in the list view of the modal*/
+.history-item { /*Styles each history entry card */
     padding: 12px;
     background: #f9f9f9;
     border-left: 4px solid #59b48d;
@@ -300,28 +292,29 @@
     transition: all 0.3s ease;
 }
 
-.history-item:hover {   /*adds a hover effect to each individual profile history entry in the list view of the modal*/
+/* Additional styles for buttons, preview cards, and modal interactions follow similar structure */
+.history-item:hover {
     background: #f0f7f4;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.history-item-info h4 {   /*adds styling to the title text*/
+.history-item-info h4 {
     margin: 0 0 5px 0;
     color: #333;
 }
 
-.history-item-date {   /*adds styling to the date text*/
+.history-item-date {
     font-size: 0.85rem;
     color: #999;
     margin: 0;
 }
 
-.history-item-actions {  /*adds styling to the container that contains the action buttons*/
+.history-item-actions {
     display: flex;
     gap: 8px;
 }
 
-.view-history-btn, .apply-history-btn, .delete-history-btn {    /*adds styling to the buttons used to view, apply, and delete*/
+.view-history-btn, .apply-history-btn, .delete-history-btn {
     padding: 6px 12px;
     border: none;
     border-radius: 4px;
@@ -331,34 +324,34 @@
     transition: all 0.3s ease;
 }
 
-.view-history-btn {    /*adds styling to the button used to view*/
+.view-history-btn {
     background: #59b48d;
     color: white;
 }
 
-.view-history-btn:hover {  /*adds a hover style to the button used to view*/
+.view-history-btn:hover {
     background: #3a8b6f;
 }
 
-.apply-history-btn {    /*adds styling to the button used to apply*/
-    background: #e2ce4a;
+.apply-history-btn {
+    background: #4a90e2;
     color: white;
 }
 
-.apply-history-btn:hover {  /*adds a hover style to the button used to apply*/
-    background: #d4ae30;
+.apply-history-btn:hover {
+    background: #357abd;
 }
 
-.delete-history-btn {   /*adds styling to the button used to delete*/
+.delete-history-btn {
     background: #e74c3c;
     color: white;
 }
 
-.delete-history-btn:hover {   /*adds a hover style to the button used to delete*/
+.delete-history-btn:hover {
     background: #c0392b;
 }
 
-.history-preview-card {   /*adds styling to the preview card*/
+.history-preview-card {
     background: linear-gradient(135deg, #59b48d 0%, #196959 100%);
     padding: 20px;
     border-radius: 10px;
@@ -368,7 +361,7 @@
     gap: 20px;
 }
 
-.preview-pic {  /*adds styling to the profile picture*/
+.preview-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -376,23 +369,23 @@
     object-fit: cover;
 }
 
-.preview-details {    /*adds styling to the container that holds the profile details in the preview card*/
+.preview-details {
     flex: 1;
 }
 
-.preview-details p {  /*adds styling to the profile details text in the preview card*/
+.preview-details p {
     margin: 8px 0;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.preview-actions {   /*adds styling to the container that holds the action buttons in the preview card*/
+.preview-actions {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.apply-btn, .back-btn {   /*adds styling to the buttons used to apply the previewed history entry or go back to the list view*/
+.apply-btn, .back-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -402,22 +395,22 @@
     flex: 1;
 }
 
-.apply-btn {   /*add styling to the apply button*/
+.apply-btn {
     background: #4a90e2;
     color: white;
 }
 
-.apply-btn:hover {   /*adds a hover style to the apply button*/
+.apply-btn:hover {
     background: #357abd;
     transform: translateY(-2px);
 }
 
-.back-btn {   /*adds styling to the back button*/
+.back-btn {
     background: #ddd;
     color: #333;
 }
 
-.back-btn:hover {  /*adds a hover style to the back button*/
+.back-btn:hover {
     background: #ccc;
 }
 
