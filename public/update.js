@@ -35,13 +35,15 @@ function saveData(profilePicData) {
 
 }
 
-if (file) {
-        const reader = new FileReader();
+if (file) { //checks if the user selected a new profile image
+
+        const reader = new FileReader(); //creates a FileReader object to convert the image file
         reader.onload = function(event) {
-            saveData(event.target.result); // Base64 string
+            saveData(event.target.result); //converts the image to a Base64 string and saves it
         };
         reader.readAsDataURL(file);
-    } else {
+
+    } else { //if no new image is selected, retain the existing profile picture
         const existingPic = localStorage.getItem("profilePic") || "images/profile.png";
         saveData(existingPic);
     }
@@ -66,19 +68,19 @@ function outStyle(ele){   //styles the input box when the user is not interactin
     
 }
 
-const fileInput = document.getElementById("profilePicInput");
+const fileInput = document.getElementById("profilePicInput"); //retrieves elements for handling live image preview
 const previewImg = document.getElementById("profilePic");
 
-fileInput.addEventListener("change", function () {
+fileInput.addEventListener("change", function () {           //detects when the user selects an image file
     const file = this.files[0];
 
     if (file) {
-        const reader = new FileReader();
+        const reader = new FileReader();                     //creates a FileReader to display the selected image
 
         reader.onload = function (e) {
-            previewImg.src = e.target.result;
+            previewImg.src = e.target.result;                //updates the image source to display a preview before saving
         };
 
-        reader.readAsDataURL(file);
+        reader.readAsDataURL(file);                          //converts the selected file into a displayable format (Base64)
     }
 });
