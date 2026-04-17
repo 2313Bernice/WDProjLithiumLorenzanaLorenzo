@@ -32,7 +32,6 @@ function saveData(profilePicData) {
     localStorage.setItem("location", location);
     
     window.location.href = "Custom.html" //redirects user to Custom.html after updating their profile
-
 }
 
 if (file) { //checks if the user selected a new profile image
