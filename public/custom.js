@@ -198,7 +198,8 @@ function applyPreview() {
 //Applies the given profile data to the current profile by updating localStorage and refreshing the displayed profile information on the page
 function applyProfile(profileData) {
 
-    const fields = ["profilePic", "disname", "age", "caption", "username", "password", "fname", "lname", "email", "num", "location"];
+    const fields = ["profilePic", "disname", "age", "caption", "username", 
+        "password", "fname", "lname", "email", "num", "location"];
 
     for(let i = 0; i < fields.length; i++) {
         const field = fields[i];
