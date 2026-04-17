@@ -42,6 +42,7 @@ function currentData() {
 
 //loads the profile history from localStorage, returning an array of history entries or an empty array if no history exists
 function loadList() {
+
     const historyJSON = localStorage.getItem("profileHistory");
 
     if(!historyJSON) {
@@ -62,13 +63,14 @@ function saveCurrent() {
     const entryNumber = history.length + 1;
 
     const entryName = prompt(
-        "Enter a name for this entry (e.g., Custom Change " + entryNumber + "):",
-        "Custom Change " + entryNumber
+        "Enter a name for this entry (e.g., Preset 1 " + entryNumber + "):",
+        "Preset 1 " + entryNumber
     );
 
-    if (!entryName || entryName.trim() === "") 
-        return;
-
+    if (!entryName || entryName.trim() === "") {
+         return;
+    }
+       
     const profileData = currentData();
 
     const newEntry = {
@@ -96,12 +98,12 @@ function showList() {
         return;
     }
 
-    let html = "";
+    let content = "";
 
     for (let i = 0; i < history.length; i++) {
         const entry = history[i];
 
-        html += `
+        content += `
         <div class="history-item">
             <div class="history-item-info">
                 <h4>${entry.name}</h4>
@@ -117,14 +119,14 @@ function showList() {
         `;
     }
 
-    historyList.innerHTML = html;
+    historyList.innerHTML = content;
 }
 
 //Displays the details of a specific history entry in the preview tab of the history modal
 //This allows users to see a preview of the profile data saved for that specific history entry
 function viewEntry(entryId) {
     const history = loadList();
-    let entry = null;
+    let entry = "";
 
     for (let i = 0; i < history.length; i++) {
         if (history[i].id === entryId) {
@@ -196,61 +198,16 @@ function applyPreview() {
 //Applies the given profile data to the current profile by updating localStorage and refreshing the displayed profile information on the page
 function applyProfile(profileData) {
 
-    if (profileData.profilePic)
-    { 
-        localStorage.setItem("profilePic", profileData.profilePic);
+    const fields = ["profilePic", "disname", "age", "caption", "username", "password", "fname", "lname", "email", "num", "location"];
+
+    for(let i = 0; i < fields.length; i++) {
+        const field = fields[i];
+
+        if (profileData[field]) {
+            localStorage.setItem(field, profileData[field]);
+        }
     }
-       
-    if (profileData.disname) 
-    {
-        localStorage.setItem("disname", profileData.disname);
-    }
-        
-    if (profileData.age)
-    {
-        localStorage.setItem("age", profileData.age);
-    }
-        
-    if (profileData.caption)
-    {
-        localStorage.setItem("caption", profileData.caption);
-    }
-        
-    if (profileData.username)
-    {
-        localStorage.setItem("username", profileData.username);
-    }
-        
-    if (profileData.password)
-    {
-        localStorage.setItem("password", profileData.password);
-    }
-        
-    if (profileData.fname)
-    {
-        localStorage.setItem("fname", profileData.fname);
-    }
-        
-    if (profileData.lname)
-    {
-        localStorage.setItem("lname", profileData.lname);
-    }
-        
-    if (profileData.email)
-    {
-        localStorage.setItem("email", profileData.email);
-    }
-        
-    if (profileData.num)
-    {
-        localStorage.setItem("num", profileData.num);
-    }
-        
-    if (profileData.location)
-    {
-        localStorage.setItem("location", profileData.location);
-    }
-        
+   
     document.getElementById("profilePic").src = profileData.profilePic ||"images/profile.png";
     document.getElementById("displayName").textContent = profileData.disname;
     document.getElementById("age").textContent = profileData.age;

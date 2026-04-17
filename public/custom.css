@@ -71,7 +71,6 @@
     margin-bottom: 20px;
 }
 
-
 .profile-content .right{
     flex: 1 1 auto;
     display: flex;
@@ -125,6 +124,13 @@
         width: 100%;
         max-width: 100%;
     }
+
+    .view-history-btn, .apply-history-btn, .delete-history-btn {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+        width: 70px;
+    }
+
 }
 
 .history-btn {   /*styles the button that opens the profile history modal*/
